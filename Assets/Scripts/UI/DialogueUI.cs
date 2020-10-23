@@ -53,7 +53,7 @@ namespace RPG.UI
             AIResponse.SetActive(!playerConversant.IsChoosing());
             playerResponse.SetActive(playerConversant.IsChoosing());
 
-            //currentSpeakerName.text = playerConversant.GetCurrentConversantName();
+            currentSpeakerName.text = playerConversant.GetCurrentConversantName();
 
             if (playerConversant.IsChoosing())
             {

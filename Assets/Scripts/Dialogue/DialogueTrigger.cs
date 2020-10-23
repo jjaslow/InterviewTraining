@@ -15,10 +15,6 @@ namespace RPG.Dialogue
         UnityEvent onTrigger;
 
 
-        public string GetAction()
-        {
-            return action;
-        }
 
         public void Trigger(string actionToTrigger)
         {

@@ -89,6 +89,8 @@ namespace RPG.Dialogue.Editor
             if(Selection.activeObject is Dialogue)
             {
                 selectedDialogue = Selection.activeObject as Dialogue;
+
+                //manually call OnGUI to redraw the inspector
                 Repaint();
             }
         }

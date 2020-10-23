@@ -723,6 +723,10 @@
       <Project>{65F393E5-C505-DE3C-DF77-4B3241404ADC}</Project>
       <Name>Oculus.VR.Scripts.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="crosstales.csproj">
+      <Project>{B2D6A78B-1F15-7559-26BE-EEC1265B3901}</Project>
+      <Name>crosstales</Name>
+    </ProjectReference>
     <ProjectReference Include="Oculus.VR.csproj">
       <Project>{F8F5B234-25F1-D937-9E84-014DBDB3B9FD}</Project>
       <Name>Oculus.VR</Name>
@@ -730,10 +734,6 @@
     <ProjectReference Include="Oculus.Platform.csproj">
       <Project>{09CEAFF1-B15C-8CD8-2C22-C0208EE054BA}</Project>
       <Name>Oculus.Platform</Name>
-    </ProjectReference>
-    <ProjectReference Include="crosstales.csproj">
-      <Project>{B2D6A78B-1F15-7559-26BE-EEC1265B3901}</Project>
-      <Name>crosstales</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

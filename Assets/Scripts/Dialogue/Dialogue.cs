@@ -24,6 +24,40 @@ namespace RPG.Dialogue
 
 
 
+        public DialogueNode GetRootNode()
+        {
+            return nodes[0];
+        }
+
+        public IEnumerable<DialogueNode> GetAllNodes()
+        {
+            return nodes;
+        }
+
+        public DialogueNode GetNode(int i)
+        {
+            return nodes[i];
+        }
+
+        public int GetNumberOfNodes()
+        {
+            return nodes.Count;
+        }
+
+
+
+        //return list of child nodes for a specific parent node
+        public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
+        {
+            List<DialogueNode> result = new List<DialogueNode>();
+            foreach (string child in parentNode.GetChildren())
+            {
+                if (nodeLookup.ContainsKey(child))
+                    result.Add(nodeLookup[child]);
+            }
+            return result;
+        }
+
         public IEnumerable<DialogueNode> GetPlayerChildren(DialogueNode currentNode)
         {
             foreach(DialogueNode child in GetAllChildren(currentNode))
@@ -68,23 +102,9 @@ namespace RPG.Dialogue
             }
         }
 
-        public IEnumerable<DialogueNode> GetAllNodes()
-        {
-            return nodes;
-        }
 
 
-        //return list of child nodes for a specific parent node
-        public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
-        {
-            List<DialogueNode> result = new List<DialogueNode>();
-            foreach(string child in parentNode.GetChildren())
-            {
-                if (nodeLookup.ContainsKey(child))
-                    result.Add(nodeLookup[child]);
-            }
-            return result;
-        }
+
 
         public bool isItAChild(DialogueNode parent, DialogueNode child)
         {
@@ -193,20 +213,7 @@ namespace RPG.Dialogue
         }
 
 
-        public DialogueNode GetRootNode()
-        {
-            return nodes[0];
-        }
 
-        public DialogueNode GetNode(int i)
-        {
-            return nodes[i];
-        }
-
-        public int GetNumberOfNodes()
-        {
-            return nodes.Count;
-        }
     }
 
 

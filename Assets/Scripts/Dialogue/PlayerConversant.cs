@@ -17,14 +17,14 @@ namespace RPG.Dialogue
 
         public event Action onConversationUpdated;
 
-        //AIConversant currentConversant = null;
+        AIConversant currentConversant = null;
 
         [SerializeField]
         string playerName;
 
-        public void StartDialogue(Dialogue newDialogue)     //, AIConversant NPC
+        public void StartDialogue(Dialogue newDialogue, AIConversant NPC)
         {
-            //currentConversant = NPC;
+            currentConversant = NPC;
 
             currentDialogue = newDialogue;
             currentNode = currentDialogue.GetRootNode();
@@ -63,6 +63,14 @@ namespace RPG.Dialogue
 
             //else its the AI turn
             DialogueNode[] children = currentDialogue.GetAIChildren(currentNode).ToArray();
+
+            //if a choice doesnt have a next node
+            if (children.Length == 0)
+            {
+                Quit();
+                return;
+            }
+
             int index = UnityEngine.Random.Range(0, children.Length);
             currentNode = children[index];
             TriggerEnterAction();
@@ -97,10 +105,6 @@ namespace RPG.Dialogue
             currentNode = chosenNode;
             TriggerEnterAction();
             Next();
-
-            //DialogueNode[] children = currentDialogue.GetAIChildren(chosenNode).ToArray();
-            //int index = Random.Range(0, children.Length);
-            //currentNode = children[index];
         }
 
 
@@ -110,7 +114,7 @@ namespace RPG.Dialogue
         {
             TriggerExitAction();
 
-            //currentConversant = null;
+            currentConversant = null;
             currentDialogue = null;
             currentNode = null;
             isChoosing = false;
@@ -124,8 +128,8 @@ namespace RPG.Dialogue
         {
             if(currentNode!=null && currentNode.GetOnEnterAction()!="")
             {
-                //foreach(DialogueTrigger trigger in currentConversant.GetComponents<DialogueTrigger>())
-                //    trigger.Trigger(currentNode.GetOnEnterAction());
+                foreach(DialogueTrigger trigger in currentConversant.GetComponents<DialogueTrigger>())
+                    trigger.Trigger(currentNode.GetOnEnterAction());
             }
         }
 
@@ -133,18 +137,18 @@ namespace RPG.Dialogue
         {
             if (currentNode != null && currentNode.GetOnExitAction() != "")
             {
-                //foreach (DialogueTrigger trigger in currentConversant.GetComponents<DialogueTrigger>())
-                //    trigger.Trigger(currentNode.GetOnExitAction());
+                foreach (DialogueTrigger trigger in currentConversant.GetComponents<DialogueTrigger>())
+                    trigger.Trigger(currentNode.GetOnExitAction());
             }
         }
 
-        //public string GetCurrentConversantName()
-        //{
-        //    if (isChoosing)
-        //        return playerName;
-        //    else
-        //        return currentConversant.GetNPCName();
-        //}
+        public string GetCurrentConversantName()
+        {
+            if (isChoosing)
+                return playerName;
+            else
+                return currentConversant.GetNPCName();
+        }
 
 
     }
