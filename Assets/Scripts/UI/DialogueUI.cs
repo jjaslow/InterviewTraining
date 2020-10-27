@@ -15,9 +15,9 @@ namespace RPG.UI
         [SerializeField] TMP_Text currentSpeakerName;
         [SerializeField] TMP_Text currentText;
 
-        [SerializeField] Button nextButton;
-        [SerializeField] Button quitButton;
-        [SerializeField] Button choiceButtonPrefab;
+        [SerializeField] GameObject nextButton;
+        [SerializeField] GameObject choiceButtonPrefab;
+        [SerializeField] GameObject quitButton;
 
         [SerializeField] GameObject AIResponse;
         [SerializeField] GameObject playerResponse;
@@ -58,11 +58,13 @@ namespace RPG.UI
             if (playerConversant.IsChoosing())
             {
                 BuildChoiceList();
+                quitButton.SetActive(false);
             }
             else
             {
                 currentText.text = playerConversant.GetText();
                 nextButton.gameObject.SetActive(playerConversant.HasNext());
+                quitButton.SetActive(!playerConversant.HasNext());
             }
         }
 
@@ -71,9 +73,10 @@ namespace RPG.UI
             playerResponse.transform.DetachChildren();
             foreach (DialogueNode choice in playerConversant.GetChoices())
             {
-                Button b = Instantiate(choiceButtonPrefab, playerResponse.transform);
+                GameObject b = Instantiate(choiceButtonPrefab, playerResponse.transform);
                 b.GetComponentInChildren<TMP_Text>().text = choice.Text;
-                b.onClick.AddListener(()=>
+                PointerEvents pe = b.GetComponent<PointerEvents>();
+                pe.OnClick.AddListener(() =>
                 {
                     playerConversant.SelectChoice(choice);
                 }

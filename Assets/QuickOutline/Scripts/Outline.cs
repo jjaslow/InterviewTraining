@@ -54,19 +54,19 @@ public class Outline : MonoBehaviour {
   }
 
   [SerializeField]
-  private Mode outlineMode = Mode.OutlineVisible;
+  private Mode outlineMode;
 
   [SerializeField]
-  private Color outlineColor = Color.red;
+  private Color outlineColor;
 
   [SerializeField, Range(0f, 10f)]
-  private float outlineWidth = 3f;
+  private float outlineWidth;
 
   [Header("Optional")]
 
   [SerializeField, Tooltip("Precompute enabled: Per-vertex calculations are performed in the editor and serialized with the object. "
   + "Precompute disabled: Per-vertex calculations are performed at runtime in Awake(). This may cause a pause for large meshes.")]
-  private bool precomputeOutline;
+  private bool precomputeOutline = false;
 
   [SerializeField, HideInInspector]
   private List<Mesh> bakeKeys = new List<Mesh>();
@@ -78,7 +78,8 @@ public class Outline : MonoBehaviour {
   private Material outlineMaskMaterial;
   private Material outlineFillMaterial;
 
-  private bool needsUpdate;
+
+    private bool needsUpdate;
 
   void Awake() {
 
@@ -95,13 +96,16 @@ public class Outline : MonoBehaviour {
     // Retrieve or generate smooth normals
     LoadSmoothNormals();
 
+        
     // Apply material properties immediately
     needsUpdate = true;
        
   }
 
   void OnEnable() {
-    foreach (var renderer in renderers) {
+        needsUpdate = true;
+
+        foreach (var renderer in renderers) {
 
       // Append outline shaders
       var materials = renderer.sharedMaterials.ToList();
@@ -113,21 +117,41 @@ public class Outline : MonoBehaviour {
     }
   }
 
-  void OnValidate() {
+    void OnDisable()
+    {
+        foreach (var renderer in renderers)
+        {
 
-    // Update material properties
-    needsUpdate = true;
+            // Remove outline shaders
+            var materials = renderer.sharedMaterials.ToList();
 
-    // Clear cache when baking is disabled or corrupted
-    if (!precomputeOutline && bakeKeys.Count != 0 || bakeKeys.Count != bakeValues.Count) {
-      bakeKeys.Clear();
-      bakeValues.Clear();
+            materials.Remove(outlineMaskMaterial);
+            materials.Remove(outlineFillMaterial);
+
+            renderer.materials = materials.ToArray();
+        }
+        needsUpdate = true;
     }
 
-    // Generate smooth normals when baking is enabled
-    if (precomputeOutline && bakeKeys.Count == 0) {
-      Bake();
-    }
+    void OnValidate() {
+
+        // Update material properties
+        //UpdateMaterialProperties();
+        needsUpdate = true;
+        bakeKeys.Clear();
+        bakeValues.Clear();
+        Bake();
+
+    //    // Clear cache when baking is disabled or corrupted
+    //    if (!precomputeOutline && bakeKeys.Count != 0 || bakeKeys.Count != bakeValues.Count) {
+    //  bakeKeys.Clear();
+    //  bakeValues.Clear();
+    //}
+
+    //// Generate smooth normals when baking is enabled
+    //if (precomputeOutline && bakeKeys.Count == 0) {
+    //  Bake();
+    //}
   }
 
   void Update() {
@@ -138,18 +162,7 @@ public class Outline : MonoBehaviour {
     }
   }
 
-  void OnDisable() {
-    foreach (var renderer in renderers) {
 
-      // Remove outline shaders
-      var materials = renderer.sharedMaterials.ToList();
-
-      materials.Remove(outlineMaskMaterial);
-      materials.Remove(outlineFillMaterial);
-
-      renderer.materials = materials.ToArray();
-    }
-  }
 
   void OnDestroy() {
 
@@ -240,8 +253,10 @@ public class Outline : MonoBehaviour {
 
   void UpdateMaterialProperties() {
 
-    // Apply properties according to mode
-    outlineFillMaterial.SetColor("_OutlineColor", outlineColor);
+
+
+        // Apply properties according to mode
+        outlineFillMaterial.SetColor("_OutlineColor", outlineColor);
 
     switch (outlineMode) {
       case Mode.OutlineAll:
@@ -254,7 +269,7 @@ public class Outline : MonoBehaviour {
         outlineMaskMaterial.SetFloat("_ZTest", (float)UnityEngine.Rendering.CompareFunction.Always);
         outlineFillMaterial.SetFloat("_ZTest", (float)UnityEngine.Rendering.CompareFunction.LessEqual);
         outlineFillMaterial.SetFloat("_OutlineWidth", outlineWidth);
-        break;
+                break;
 
       case Mode.OutlineHidden:
         outlineMaskMaterial.SetFloat("_ZTest", (float)UnityEngine.Rendering.CompareFunction.Always);

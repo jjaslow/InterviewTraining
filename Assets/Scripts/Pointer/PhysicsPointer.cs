@@ -7,7 +7,7 @@ public class PhysicsPointer : MonoBehaviour
 
     public float defaultLength = 5f;
     private LineRenderer lineRenderer = null;
-    bool startedTalking = false;
+    bool isPressing = false;
 
     private void Awake()
     {
@@ -66,8 +66,17 @@ public class PhysicsPointer : MonoBehaviour
 
         pe.OnHover();
 
-        if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.RTouch) > .5f)
+        if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.RTouch) > .5f && !isPressing)
+        {
             pe.OnPointerClick();
+            isPressing = true;
+        }
+
+        if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.RTouch) < .5f && isPressing)
+        {
+            isPressing = false;
+            pe.OnPointerRelease();
+        }
 
 
         //else if (!startedTalking && hit.collider.gameObject.GetComponent<Hostess>() != null)

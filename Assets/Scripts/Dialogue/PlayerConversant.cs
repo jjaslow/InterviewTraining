@@ -21,6 +21,8 @@ namespace RPG.Dialogue
 
         [SerializeField]
         string playerName;
+        [SerializeField]
+        string candidatesName;
 
         public void StartDialogue(Dialogue newDialogue, AIConversant NPC)
         {
@@ -52,9 +54,10 @@ namespace RPG.Dialogue
         {
             TriggerExitAction();
 
+            //FIRST CHECK IF THERE ARE PLAYER OPTIONS
             //if player turn we need to list our choices of replies
-            int numPlayerResponses = currentDialogue.GetPlayerChildren(currentNode).Count();
-            if(numPlayerResponses>0)
+            int numChoiceResponses = currentDialogue.GetChoiceChildren(currentNode).Count();
+            if(numChoiceResponses>0)
             {
                 isChoosing = true;
                 onConversationUpdated?.Invoke();
@@ -62,7 +65,7 @@ namespace RPG.Dialogue
             }
 
             //else its the AI turn
-            DialogueNode[] children = currentDialogue.GetAIChildren(currentNode).ToArray();
+            DialogueNode[] children = currentDialogue.GetAllChildren(currentNode).ToArray();
 
             //if a choice doesnt have a next node
             if (children.Length == 0)
@@ -87,16 +90,20 @@ namespace RPG.Dialogue
 
         public IEnumerable<DialogueNode> GetChoices()
         {
-            return currentDialogue.GetPlayerChildren(currentNode);
-
-            //yield return "aaa";
-            //yield return "bbb";
-            //yield return "ccc";
+            return currentDialogue.GetChoiceChildren(currentNode);
         }
 
         public bool IsChoosing()
         {
             return isChoosing;
+
+            //foreach(DialogueNode node in currentDialogue.GetAllChildren(currentNode).ToList())
+            //{
+            //    if (node.IsAChoice())
+            //        return true;
+            //}
+
+            //return false;
         }
 
         public void SelectChoice(DialogueNode chosenNode)
@@ -140,16 +147,29 @@ namespace RPG.Dialogue
                 foreach (DialogueTrigger trigger in currentConversant.GetComponents<DialogueTrigger>())
                     trigger.Trigger(currentNode.GetOnExitAction());
             }
+            if(currentNode != null && currentNode.GetScore() != 0)
+            {
+                AddNodeToScore(currentNode.GetScore(), currentNode.GetDescription());
+            }
         }
 
         public string GetCurrentConversantName()
         {
-            if (isChoosing)
+            if (currentNode.IsPlayerSpeaking() || isChoosing)
                 return playerName;
             else
-                return currentConversant.GetNPCName();
+                return candidatesName;
         }
 
+
+        void AddNodeToScore(int score, string description)
+        {
+            var newScore = new GameManager.Score(score, description);
+            Debug.Log("add score");
+
+            if(!GameManager.Instance.ScoreAlreadyAdded(description))
+                GameManager.Instance.AddToScore(newScore);
+        }
 
     }
 

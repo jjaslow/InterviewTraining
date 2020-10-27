@@ -1,19 +1,23 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Outline))]
+
 public class PointerEvents : MonoBehaviour//, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler
 {
     //[SerializeField] private Color normalColor;
     //[SerializeField] private Color enterColor;
     //[SerializeField] private Color downColor;
-    [SerializeField] private UnityEvent OnClick = new UnityEvent();
+    [SerializeField] public UnityEvent OnClick = new UnityEvent();
 
     Outline outline;
+    Image image;
+    Renderer rend;
+    Color startColor;
 
     bool isHovering = false;
 
@@ -21,6 +25,12 @@ public class PointerEvents : MonoBehaviour//, IPointerEnterHandler, IPointerExit
     private void Start()
     {
         outline = GetComponent<Outline>();
+        rend = GetComponent<Renderer>();
+        image = GetComponent<Image>();
+
+        if(rend!=null)
+            startColor = rend.material.color;
+
         //outline.OutlineColor = Color.red;
         //outline.OutlineMode = Outline.Mode.OutlineVisible;
         //outline.OutlineWidth = 3f;
@@ -30,9 +40,37 @@ public class PointerEvents : MonoBehaviour//, IPointerEnterHandler, IPointerExit
     {
         isHovering = false;
         //gameObject.GetComponentInChildren<Renderer>().material.color = normalColor;
-        outline.enabled = false;
+
+        if(outline!=null)
+            outline.enabled = false;
+        else if (image!=null)
+        {
+            image.GetComponent<UIButtonImageChanger>().SwapSprite(0);
+        }
+        else
+        {
+            rend.material.color = startColor;
+        }
     }
 
+
+    public void OnHover()
+    {
+        Debug.Log("Pointer EVENTS pointing at: " + gameObject.name);
+        //gameObject.GetComponentInChildren<Renderer>().material.color = enterColor;
+        isHovering = true;
+
+        if(outline!=null)
+            outline.enabled = true;
+        else if (image != null)
+        {
+            image.GetComponent<UIButtonImageChanger>().SwapSprite(1);
+        }
+        else
+        {
+            rend.material.color = new Color(1, 0, 0, .6f);
+        }
+    }
 
 
 
@@ -40,20 +78,14 @@ public class PointerEvents : MonoBehaviour//, IPointerEnterHandler, IPointerExit
     {
         OnClick.Invoke();
         //gameObject.GetComponentInChildren<Renderer>().material.color = downColor;
-        Debug.Log("Click on " + name);
+        Debug.Log("Clicked on " + name);
     }
 
 
-
-    public void OnHover()
+    internal void OnPointerRelease()
     {
-        Debug.Log("Pointer EVENTS pointing at: " + gameObject.name);
-        //gameObject.GetComponentInChildren<Renderer>().material.color = enterColor;
-        outline.enabled = true;
-        isHovering = true;
+        //Debug.Log("Released click on " + name);
     }
-
-
 }
 
 

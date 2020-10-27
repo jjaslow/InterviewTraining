@@ -1,0 +1,267 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-6498513603472383060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: c8119969-c6c6-482b-b9a2-2c172a1e0f2d
+  m_EditorClassIdentifier: 
+  text: I was a cashier
+  children:
+  - dc4ee781-4014-41bb-a34a-29049a3a3193
+  - 109dc81f-2b04-4d46-9d60-1d2a9ef18b34
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 13
+    y: 175
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &-4384206940982143546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: dc4ee781-4014-41bb-a34a-29049a3a3193
+  m_EditorClassIdentifier: 
+  text: Great!
+  children: []
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 258
+    y: 9
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: -5
+  description: You didnt ask about their experiences
+--- !u!114 &-529199130465843565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: 4559fc69-a136-478d-af26-303e98d004cd
+  m_EditorClassIdentifier: 
+  text: Great idea
+  children: []
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 737
+    y: 191
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e81341664088a8468157a48bde72cbe, type: 3}
+  m_Name: ResumeSection1
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 791854659755691982}
+  - {fileID: -6498513603472383060}
+  - {fileID: -4384206940982143546}
+  - {fileID: 2506703197738516357}
+  - {fileID: 3535865457761213128}
+  - {fileID: 7029008507174220180}
+  - {fileID: 7739888697731576849}
+  - {fileID: -529199130465843565}
+  - {fileID: 7250766694491869699}
+  newNodeOffset: {x: 225, y: 0}
+--- !u!114 &791854659755691982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: bf225bc5-59c8-47bb-b924-3e06cf2e3610
+  m_EditorClassIdentifier: 
+  text: Tell me about what you did here
+  children:
+  - c8119969-c6c6-482b-b9a2-2c172a1e0f2d
+  isPlayerSpeaking: 1
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 10
+    y: 10
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &2506703197738516357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: 109dc81f-2b04-4d46-9d60-1d2a9ef18b34
+  m_EditorClassIdentifier: 
+  text: Ask them about a difficult customer
+  children:
+  - 32aa7f5a-26f2-480b-9fd0-a2e01c06787c
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 274
+    y: 190
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &3535865457761213128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: 32aa7f5a-26f2-480b-9fd0-a2e01c06787c
+  m_EditorClassIdentifier: 
+  text: Tell me about a time when you helped a difficult customer
+  children:
+  - e02c4dae-8efe-46fc-8949-f2b83c30b03b
+  isPlayerSpeaking: 1
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 272
+    y: 355
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &7029008507174220180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: e02c4dae-8efe-46fc-8949-f2b83c30b03b
+  m_EditorClassIdentifier: 
+  text: I gave them free fries
+  children:
+  - fac19b11-40c4-498a-81cf-1535713306ba
+  - 4559fc69-a136-478d-af26-303e98d004cd
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 511
+    y: 358
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &7250766694491869699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: c6bef0b1-5022-4a35-aa2a-c0a37bffe82c
+  m_EditorClassIdentifier: 
+  text: Its not my money.
+  children: []
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 961
+    y: 359
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &7739888697731576849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: fac19b11-40c4-498a-81cf-1535713306ba
+  m_EditorClassIdentifier: 
+  text: Why did you waste money
+  children:
+  - c6bef0b1-5022-4a35-aa2a-c0a37bffe82c
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 736
+    y: 359
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 5
+  description: You asked a follow up question

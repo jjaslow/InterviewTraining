@@ -67,6 +67,15 @@ namespace RPG.Dialogue
             }
         }
 
+        public IEnumerable<DialogueNode> GetChoiceChildren(DialogueNode currentNode)
+        {
+            foreach (DialogueNode child in GetAllChildren(currentNode))
+            {
+                if (child.IsAChoice())
+                    yield return child;
+            }
+        }
+
         public IEnumerable<DialogueNode> GetAIChildren(DialogueNode currentNode)
         {
             foreach (DialogueNode child in GetAllChildren(currentNode))

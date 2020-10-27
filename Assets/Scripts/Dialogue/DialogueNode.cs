@@ -64,16 +64,27 @@ namespace RPG.Dialogue
 
 
         [SerializeField] bool isPlayerSpeaking = false;
+        [SerializeField] bool isAChoice = false;
 
         public bool IsPlayerSpeaking()
         {
             return isPlayerSpeaking;
         }
 
+        public bool IsAChoice()
+        {
+            return isAChoice;
+        }
+
 #if UNITY_EDITOR
         public void SetIsPlayerSpeaking(bool val)
         {
             isPlayerSpeaking = val;
+            EditorUtility.SetDirty(this);
+        }
+        public void SetAChoice(bool val)
+        {
+            isAChoice = val;
             EditorUtility.SetDirty(this);
         }
 #endif
@@ -118,6 +129,22 @@ namespace RPG.Dialogue
         {
             return onExitAction;
         }
+
+        [SerializeField]
+        int score = 0;
+        [SerializeField]
+        string description;
+
+
+        public int GetScore()
+        {
+            return score;
+        }
+        public string GetDescription()
+        {
+            return description;
+        }
+
 
     }
 

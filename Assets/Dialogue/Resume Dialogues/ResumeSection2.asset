@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-81206060766362511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: d07bcd43-a068-491c-8a26-7d744f62d257
+  m_EditorClassIdentifier: 
+  text: Actually I dont want to be here
+  children: []
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 10
+    y: 10
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e81341664088a8468157a48bde72cbe, type: 3}
+  m_Name: ResumeSection2
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: -81206060766362511}
+  newNodeOffset: {x: 225, y: 0}

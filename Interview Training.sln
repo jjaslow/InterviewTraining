@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{DDC8112B-A844-3897-0863-BC2031C57B26}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "crosstales", "crosstales.csproj", "{B2D6A78B-1F15-7559-26BE-EEC1265B3901}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.VR", "Oculus.VR.csproj", "{F8F5B234-25F1-D937-9E84-014DBDB3B9FD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oculus.Platform", "Oculus.Platform.csproj", "{09CEAFF1-B15C-8CD8-2C22-C0208EE054BA}"
@@ -27,10 +25,6 @@ Global
 		{DDC8112B-A844-3897-0863-BC2031C57B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDC8112B-A844-3897-0863-BC2031C57B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDC8112B-A844-3897-0863-BC2031C57B26}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B2D6A78B-1F15-7559-26BE-EEC1265B3901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B2D6A78B-1F15-7559-26BE-EEC1265B3901}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B2D6A78B-1F15-7559-26BE-EEC1265B3901}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B2D6A78B-1F15-7559-26BE-EEC1265B3901}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F8F5B234-25F1-D937-9E84-014DBDB3B9FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F8F5B234-25F1-D937-9E84-014DBDB3B9FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8F5B234-25F1-D937-9E84-014DBDB3B9FD}.Release|Any CPU.ActiveCfg = Release|Any CPU

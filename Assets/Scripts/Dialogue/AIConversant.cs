@@ -10,31 +10,37 @@ namespace RPG.Dialogue
         [SerializeField]
         Dialogue dialogue = null;
 
+        PlayerConversant playerConversant;
+
         [SerializeField]
-        string NPCName;
+        bool getExternalDialogue = false;
 
-
-
-   
-
-        public bool HandleRaycast(PlayerController callingController)
+        private void Start()
         {
+            playerConversant = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>();
+        }
+
+        public void StartConversation()
+        {
+            if (playerConversant.IsActive())
+                return;
+
+            if (getExternalDialogue)
+                dialogue = GetNextDialogue();
+
             if (dialogue == null)
-                return false;
+                return;
 
-            if (Input.GetMouseButtonDown(0))
-            {
-                Debug.Log("Conversation Started");
-                callingController.GetComponent<PlayerConversant>().StartDialogue(dialogue, this);
-            }
-
-            return true;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(dialogue, this);
         }
 
-        public string GetNPCName()
+
+        Dialogue GetNextDialogue()
         {
-            return NPCName;
+            Debug.Log("fetching external dialogue");
+            return GameManager.Instance.ProvideDialogue();
         }
+
     }
 
 

@@ -17,6 +17,7 @@ namespace RPG.Dialogue.Editor
         Dialogue selectedDialogue = null;
         GUIStyle nodeStyle = null;
         GUIStyle playerNodeStyle = null;
+        GUIStyle choiceNodeStyle = null;
 
         DialogueNode draggingNode = null;
         Vector2 dragOffset;
@@ -80,6 +81,12 @@ namespace RPG.Dialogue.Editor
             playerNodeStyle.padding = new RectOffset(20, 20, 20, 20);
             playerNodeStyle.border = new RectOffset(12, 12, 12, 12);
             playerNodeStyle.normal.textColor = Color.white;
+
+            choiceNodeStyle = new GUIStyle();
+            choiceNodeStyle.normal.background = EditorGUIUtility.Load("node2") as Texture2D;
+            choiceNodeStyle.padding = new RectOffset(20, 20, 20, 20);
+            choiceNodeStyle.border = new RectOffset(12, 12, 12, 12);
+            choiceNodeStyle.normal.textColor = Color.white;
         }
 
         //need to check the type of the asset selected in the Editor and if it is a Dialogue then 
@@ -223,6 +230,8 @@ namespace RPG.Dialogue.Editor
             GUIStyle style = nodeStyle;
             if (dn.IsPlayerSpeaking())
                 style = playerNodeStyle;
+            if (dn.IsAChoice())
+                style = choiceNodeStyle;
 
             //create the block
             GUILayout.BeginArea(dn.RectPosition, style);
@@ -232,6 +241,14 @@ namespace RPG.Dialogue.Editor
 
             //EditorGUILayout.LabelField("Node:", EditorStyles.whiteLabel);
             //string newID = EditorGUILayout.TextField(dn.uniqueID);
+
+            string speaker;
+            if (dn.IsPlayerSpeaking())
+                speaker = "Player";
+            else
+                speaker = "Candidate";
+             
+            EditorGUILayout.LabelField(speaker);
 
             GUILayoutOption[] options =
             {
