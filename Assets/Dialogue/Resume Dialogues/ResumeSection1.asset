@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6498513603472383060
+--- !u!114 &-8591198108741204117
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,25 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: c8119969-c6c6-482b-b9a2-2c172a1e0f2d
+  m_Name: Z0372a81b-5a21-42bc-9368-85381431239a
   m_EditorClassIdentifier: 
-  text: I was a cashier
+  text: '"Tell me about it."'
   children:
-  - dc4ee781-4014-41bb-a34a-29049a3a3193
-  - 109dc81f-2b04-4d46-9d60-1d2a9ef18b34
-  isPlayerSpeaking: 0
-  isAChoice: 0
+  - Z66949088-1ceb-459e-8242-570acda0e66b
+  isPlayerSpeaking: 1
+  isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 13
-    y: 175
+    x: 247
+    y: 220
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
   score: 0
   description: 
---- !u!114 &-4384206940982143546
+--- !u!114 &-7404606866870605711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -38,23 +37,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: dc4ee781-4014-41bb-a34a-29049a3a3193
+  m_Name: Z4e6dc5d9-d253-418e-a51e-d749d8c2b5a5
   m_EditorClassIdentifier: 
-  text: Great!
-  children: []
+  text: '"How did you help them find what they were looking for?"'
+  children:
+  - Z6c3c7b31-ec29-4522-a0ea-d484dc798725
   isPlayerSpeaking: 1
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 258
-    y: 9
+    x: 539
+    y: 175
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: -5
-  description: You didnt ask about their experiences
---- !u!114 &-529199130465843565
+  score: 5
+  description: 'You asked a follow up question '
+--- !u!114 &-6872610334640339256
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -64,16 +64,181 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: 4559fc69-a136-478d-af26-303e98d004cd
+  m_Name: Za9cb5543-3ffb-4b48-ab8d-3453d66555e9
   m_EditorClassIdentifier: 
-  text: Great idea
+  text: '"Indeed."'
   children: []
   isPlayerSpeaking: 1
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 737
-    y: 191
+    x: 1025
+    y: 162
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &-6373163413651637984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Ze7571f64-3f42-492f-a75e-1c5474a5312a
+  m_EditorClassIdentifier: 
+  text: '"Well done."'
+  children: []
+  isPlayerSpeaking: 1
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 1031
+    y: 448
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &-5319596749812185741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z4ba9d7ec-ccf9-4137-89b9-5c0b2caa7bbd
+  m_EditorClassIdentifier: 
+  text: '"I had a blind customer that was looking to purchase a green top for their
+    mother."'
+  children:
+  - Z0372a81b-5a21-42bc-9368-85381431239a
+  - Zb8a04372-7bfc-4667-9885-1e3fca2e6773
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 14
+    y: 202
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &-4238391600569719904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z66949088-1ceb-459e-8242-570acda0e66b
+  m_EditorClassIdentifier: 
+  text: '"It was for a birthday gift."'
+  children:
+  - Z4e6dc5d9-d253-418e-a51e-d749d8c2b5a5
+  - Z90241506-b239-45d6-a115-e12c5d52159e
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 239
+    y: 426
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &-4010455768721740108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z4ec8f9ef-dde9-45b7-b018-499a670b96a3
+  m_EditorClassIdentifier: 
+  text: '"What did the customer do?"'
+  children:
+  - Z5832d769-ec14-4fa5-869c-d0066d95d751
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 784
+    y: 282
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &-4005726273228427750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z5832d769-ec14-4fa5-869c-d0066d95d751
+  m_EditorClassIdentifier: 
+  text: '"They were so grateful with my help that they purchased 3 of the 4 tops!"'
+  children:
+  - Ze7571f64-3f42-492f-a75e-1c5474a5312a
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 806
+    y: 448
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &-229999771550230275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z18516056-be08-4019-8f42-5603a49454e3
+  m_EditorClassIdentifier: 
+  text: '"Tell me about one of your most memorable experiences in providing excellent
+    customer service."'
+  children:
+  - Z4ba9d7ec-ccf9-4137-89b9-5c0b2caa7bbd
+  isPlayerSpeaking: 1
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 22
+    y: 14
     width: 200
     height: 125
   onEnterAction: 
@@ -93,17 +258,22 @@ MonoBehaviour:
   m_Name: ResumeSection1
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 791854659755691982}
-  - {fileID: -6498513603472383060}
-  - {fileID: -4384206940982143546}
-  - {fileID: 2506703197738516357}
-  - {fileID: 3535865457761213128}
-  - {fileID: 7029008507174220180}
-  - {fileID: 7739888697731576849}
-  - {fileID: -529199130465843565}
-  - {fileID: 7250766694491869699}
+  - {fileID: -229999771550230275}
+  - {fileID: -5319596749812185741}
+  - {fileID: -8591198108741204117}
+  - {fileID: 4629790519095324883}
+  - {fileID: -4238391600569719904}
+  - {fileID: -7404606866870605711}
+  - {fileID: 8712953573517798565}
+  - {fileID: 6533499613194327103}
+  - {fileID: 2561819298273994600}
+  - {fileID: -4010455768721740108}
+  - {fileID: 6616871088760351304}
+  - {fileID: -6872610334640339256}
+  - {fileID: -4005726273228427750}
+  - {fileID: -6373163413651637984}
   newNodeOffset: {x: 225, y: 0}
---- !u!114 &791854659755691982
+--- !u!114 &2561819298273994600
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,51 +283,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: bf225bc5-59c8-47bb-b924-3e06cf2e3610
+  m_Name: Za905f003-83d6-4b51-8313-9abf3fbab7cd
   m_EditorClassIdentifier: 
-  text: Tell me about what you did here
+  text: '"That probably took a long time."'
   children:
-  - c8119969-c6c6-482b-b9a2-2c172a1e0f2d
-  isPlayerSpeaking: 1
-  isAChoice: 0
-  rectPosition:
-    serializedVersion: 2
-    x: 10
-    y: 10
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
---- !u!114 &2506703197738516357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: 109dc81f-2b04-4d46-9d60-1d2a9ef18b34
-  m_EditorClassIdentifier: 
-  text: Ask them about a difficult customer
-  children:
-  - 32aa7f5a-26f2-480b-9fd0-a2e01c06787c
+  - Ze780b0c9-b502-47e1-8857-a3c1fb0fd71e
   isPlayerSpeaking: 1
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 274
-    y: 190
+    x: 770
+    y: 13
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
   score: 0
   description: 
---- !u!114 &3535865457761213128
+--- !u!114 &4629790519095324883
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,78 +310,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: 32aa7f5a-26f2-480b-9fd0-a2e01c06787c
+  m_Name: Zb8a04372-7bfc-4667-9885-1e3fca2e6773
   m_EditorClassIdentifier: 
-  text: Tell me about a time when you helped a difficult customer
-  children:
-  - e02c4dae-8efe-46fc-8949-f2b83c30b03b
-  isPlayerSpeaking: 1
-  isAChoice: 0
-  rectPosition:
-    serializedVersion: 2
-    x: 272
-    y: 355
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
---- !u!114 &7029008507174220180
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: e02c4dae-8efe-46fc-8949-f2b83c30b03b
-  m_EditorClassIdentifier: 
-  text: I gave them free fries
-  children:
-  - fac19b11-40c4-498a-81cf-1535713306ba
-  - 4559fc69-a136-478d-af26-303e98d004cd
-  isPlayerSpeaking: 0
-  isAChoice: 0
-  rectPosition:
-    serializedVersion: 2
-    x: 511
-    y: 358
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
---- !u!114 &7250766694491869699
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: c6bef0b1-5022-4a35-aa2a-c0a37bffe82c
-  m_EditorClassIdentifier: 
-  text: Its not my money.
+  text: '"I don''t like the color green."'
   children: []
-  isPlayerSpeaking: 0
-  isAChoice: 0
+  isPlayerSpeaking: 1
+  isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 961
-    y: 359
+    x: 261
+    y: 7
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
---- !u!114 &7739888697731576849
+  score: -5
+  description: You didnt ask about their experiences
+--- !u!114 &6533499613194327103
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,20 +336,78 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: fac19b11-40c4-498a-81cf-1535713306ba
+  m_Name: Z6c3c7b31-ec29-4522-a0ea-d484dc798725
   m_EditorClassIdentifier: 
-  text: Why did you waste money
+  text: '"I asked them what size their mother wears. Then I collected all the green
+    tops we had in stock for that size, there were only 4 of them. I described them
+    the best I could (dark vs light green) and had them touch each top to feel the
+    fabric."'
   children:
-  - c6bef0b1-5022-4a35-aa2a-c0a37bffe82c
-  isPlayerSpeaking: 1
-  isAChoice: 1
+  - Za905f003-83d6-4b51-8313-9abf3fbab7cd
+  - Z4ec8f9ef-dde9-45b7-b018-499a670b96a3
+  isPlayerSpeaking: 0
+  isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 736
-    y: 359
+    x: 522
+    y: 434
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 5
-  description: You asked a follow up question
+  score: 0
+  description: 
+--- !u!114 &6616871088760351304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Ze780b0c9-b502-47e1-8857-a3c1fb0fd71e
+  m_EditorClassIdentifier: 
+  text: '"I was there to help!"'
+  children:
+  - Za9cb5543-3ffb-4b48-ab8d-3453d66555e9
+  - Z4ec8f9ef-dde9-45b7-b018-499a670b96a3
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 995
+    y: 13
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &8712953573517798565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z90241506-b239-45d6-a115-e12c5d52159e
+  m_EditorClassIdentifier: 
+  text: '"How thoughtful!"'
+  children: []
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 526
+    y: 20
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 

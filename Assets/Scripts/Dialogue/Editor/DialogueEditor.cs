@@ -123,7 +123,7 @@ namespace RPG.Dialogue.Editor
                 scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
                 //so we can set the size of the total contents below. we are establishing an area for auto layout to see.
                 //This is hard coded as a large box.
-                //TODO:: would be better to calculate based on the smallest and largest node positions???
+
                 Rect canvas = GUILayoutUtility.GetRect(4000, 4000);
                 //draw background
                 Texture2D backgroundTex = Resources.Load("background") as Texture2D;

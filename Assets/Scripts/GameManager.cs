@@ -1,4 +1,5 @@
 ﻿using RPG.Dialogue;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,11 +15,21 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     List<Dialogue> dialogues = new List<Dialogue>();
     int currentDialogue = 0;
+    int numberOfResumeDialogues;
+    int totalNumberOfDialogues;
 
-    PlayerConversant player;
+    [SerializeField]
+    List<Dialogue> completedDialogues = new List<Dialogue>();
 
     [SerializeField]
     List<Score> scores = new List<Score>();
+
+    [Space]
+    [SerializeField]
+    AudioSource _voiceOverAudio;
+    [SerializeField]
+    GameObject resumeSection;
+
 
     [System.Serializable]
     public class Score
@@ -48,11 +59,11 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>();
+        numberOfResumeDialogues = resumeSection.transform.childCount;
+        totalNumberOfDialogues = numberOfResumeDialogues + dialogues.Count;
     }
 
-    [SerializeField]
-    AudioSource _voiceOverAudio;
+
 
     public void PlayVoiceOver(AudioClip clip)
     {
@@ -63,6 +74,12 @@ public class GameManager : MonoBehaviour
     public void AddToScore(Score newScore)
     {
         scores.Add(newScore);
+    }
+
+    public void AddToCompletedDialogues(Dialogue d)
+    {
+        if(!completedDialogues.Contains(d))
+            completedDialogues.Add(d);
     }
 
     public bool ScoreAlreadyAdded(string description)
@@ -81,10 +98,30 @@ public class GameManager : MonoBehaviour
         if (dialogues.Count == 0)
             return null;
 
-        int index = Random.Range(0, dialogues.Count);
-        Dialogue dia = dialogues[index];
-        dialogues.RemoveAt(index);
-        Debug.Log("found a dialogue: " + dia.name);
+        if (completedDialogues.Count == totalNumberOfDialogues)
+            EndOfInterview();
+
+        Dialogue dia = dialogues[currentDialogue];
+
+        UpdateCurrentDialogue();
+
         return dia;
     }
+
+    private void UpdateCurrentDialogue()
+    {
+        if (currentDialogue == 0)
+            currentDialogue++;
+        else if (completedDialogues.Count < numberOfResumeDialogues + 2-1)    //resume items + 1 and 2 candidate
+            return;
+        else
+            currentDialogue++;
+    }
+
+    private void EndOfInterview()
+    {
+        Debug.Log("END OF INTERVIEW");
+    }
+
+    //TODO:: count score
 }

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ namespace RPG.Dialogue
         [SerializeField]
         Dialogue dialogue = null;
 
+        GameObject player;
         PlayerConversant playerConversant;
 
         [SerializeField]
@@ -17,7 +19,8 @@ namespace RPG.Dialogue
 
         private void Start()
         {
-            playerConversant = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>();
+            player = GameObject.FindGameObjectWithTag("Player");
+            playerConversant = player.GetComponent<PlayerConversant>();
         }
 
         public void StartConversation()
@@ -31,9 +34,18 @@ namespace RPG.Dialogue
             if (dialogue == null)
                 return;
 
-            GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerConversant>().StartDialogue(dialogue, this);
+            GameManager.Instance.AddToCompletedDialogues(dialogue);
+            playerConversant.StartDialogue(dialogue, this);
+
+            if(CompareTag("ResumeButton"))
+                DeactivateButton();
         }
 
+        private void DeactivateButton()
+        {
+            GetComponent<Renderer>().enabled = false;
+            GetComponent<Collider>().enabled = false;
+        }
 
         Dialogue GetNextDialogue()
         {

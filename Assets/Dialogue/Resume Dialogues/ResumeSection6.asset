@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8838890481036622633
+--- !u!114 &-8767521063942920954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,132 +10,77 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Ze84c2d6f-a18d-465e-9bce-cbd9e489dd9c
+  m_Name: Z83820292-6a75-466f-82e5-7a2870076613
   m_EditorClassIdentifier: 
-  text: Would you like to offer them a beverage before the start of the interview?
-  children:
-  - Zcef9d186-04d6-4a06-a711-be62fcabf871
-  - Z422ea533-b9f5-428b-a3bb-a2f029411c92
-  isPlayerSpeaking: 1
-  isAChoice: 1
-  rectPosition:
-    serializedVersion: 2
-    x: 262
-    y: 28
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
---- !u!114 &-5381587612106704487
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Za1b8fb02-a0de-4acb-bd2a-28cebdcb162e
-  m_EditorClassIdentifier: 
-  text: Head right into the candidate's interview?
-  children:
-  - Zfab9bda9-ddfb-42f5-a286-7e1b0c990216
-  isPlayerSpeaking: 1
-  isAChoice: 1
-  rectPosition:
-    serializedVersion: 2
-    x: 282
-    y: 280
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
---- !u!114 &-4378943278700664868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Za8d176c0-0301-4c00-9485-cbcb5af7ea95
-  m_EditorClassIdentifier: 
-  text: '"Thank you for the drink. Here is a copy of my resume. I will put it on
-    your desk. You can select it to review my experience."'
+  text: '"Well, this is a customer support role, not a marketing position."'
   children: []
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 684
+    y: 18
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &-5446492405249408803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z6c57a379-7ccf-4be8-812e-1ebd84a285dc
+  m_EditorClassIdentifier: 
+  text: '"I liked the marketing class."'
+  children:
+  - Z83820292-6a75-466f-82e5-7a2870076613
+  - Z3a946476-222c-4397-ac87-cbee4d539298
   isPlayerSpeaking: 0
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 1146
-    y: 87
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: Display Resume
-  score: 0
-  description: 
---- !u!114 &-4083083657530555545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Zfab9bda9-ddfb-42f5-a286-7e1b0c990216
-  m_EditorClassIdentifier: 
-  text: '"Here is a copy of my resume. I will put it on your desk. You can select
-    it to review my experience."'
-  children: []
-  isPlayerSpeaking: 0
-  isAChoice: 0
-  rectPosition:
-    serializedVersion: 2
-    x: 982
-    y: 400
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: Display Resume
-  score: 0
-  description: 
---- !u!114 &-3872248274469779736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Zcef9d186-04d6-4a06-a711-be62fcabf871
-  m_EditorClassIdentifier: 
-  text: '"Would you like a beer from our kitchen fridge?"'
-  children:
-  - Z2fed6115-4189-4946-a898-2cf49aa5dcb2
-  isPlayerSpeaking: 1
-  isAChoice: 1
-  rectPosition:
-    serializedVersion: 2
-    x: 648
-    y: 172
+    x: 437
+    y: 161
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: -10
-  description: no drinking on the job!
+  score: 0
+  description: 
+--- !u!114 &-2243061099720959772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Zcd40dd97-12c8-4c7f-a4aa-077c8e28f097
+  m_EditorClassIdentifier: 
+  text: '"Tell me how you would apply your learnings to this position."'
+  children:
+  - Z81ff4c84-0dc9-4a93-9e51-29fd5a3aa8f6
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 290
+    y: 341
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,20 +91,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e81341664088a8468157a48bde72cbe, type: 3}
-  m_Name: 1 Introduction
+  m_Name: ResumeSection6
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: 1695125400522090001}
-  - {fileID: 8281462502291518435}
-  - {fileID: -5381587612106704487}
-  - {fileID: -8838890481036622633}
-  - {fileID: -3872248274469779736}
-  - {fileID: 3065452698452953735}
-  - {fileID: -4083083657530555545}
-  - {fileID: 9107636973648178471}
-  - {fileID: -4378943278700664868}
+  - {fileID: 2179756639900959561}
+  - {fileID: 6778056882840388359}
+  - {fileID: -2243061099720959772}
+  - {fileID: 7870877294663347267}
+  - {fileID: -5446492405249408803}
+  - {fileID: -8767521063942920954}
+  - {fileID: 8780941259060232690}
+  - {fileID: 8188900284527431933}
   newNodeOffset: {x: 225, y: 0}
---- !u!114 &1695125400522090001
+--- !u!114 &2179756639900959561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,24 +113,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Z2274584d-f3e9-4808-83dd-2048f1dd9bbe
+  m_Name: Z353929ef-0724-4ecd-97b7-0e0151f038f6
   m_EditorClassIdentifier: 
-  text: '"Thank you for coming in to interview for the customer support position."'
+  text: '"Tell me about some of the things you learned in school."'
   children:
-  - Ze578486d-66df-4569-a176-1ebb5fb633b7
+  - Z628c57b8-a803-41f7-ac4e-db0437b6f2af
   isPlayerSpeaking: 1
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
     x: 10
-    y: 14
+    y: 10
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
   score: 0
   description: 
---- !u!114 &3065452698452953735
+--- !u!114 &6778056882840388359
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,52 +140,26 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Z422ea533-b9f5-428b-a3bb-a2f029411c92
+  m_Name: Z628c57b8-a803-41f7-ac4e-db0437b6f2af
   m_EditorClassIdentifier: 
-  text: '"Would you like a glass of water?"'
+  text: '"My combination of psychology and business makes me an ideal candidate for
+    a customer support role."'
   children:
-  - Z2fed6115-4189-4946-a898-2cf49aa5dcb2
-  isPlayerSpeaking: 1
-  isAChoice: 1
-  rectPosition:
-    serializedVersion: 2
-    x: 655
-    y: 26
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
---- !u!114 &8281462502291518435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Ze578486d-66df-4569-a176-1ebb5fb633b7
-  m_EditorClassIdentifier: 
-  text: '"Thank you for having me."'
-  children:
-  - Za1b8fb02-a0de-4acb-bd2a-28cebdcb162e
-  - Ze84c2d6f-a18d-465e-9bce-cbd9e489dd9c
+  - Zcd40dd97-12c8-4c7f-a4aa-077c8e28f097
+  - Z5c2d9288-4179-4668-a1c8-5dd40ab7bc92
   isPlayerSpeaking: 0
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 39
-    y: 277
+    x: 27
+    y: 183
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
   score: 0
   description: 
---- !u!114 &9107636973648178471
+--- !u!114 &7870877294663347267
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -251,17 +169,71 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Z2fed6115-4189-4946-a898-2cf49aa5dcb2
+  m_Name: Z5c2d9288-4179-4668-a1c8-5dd40ab7bc92
   m_EditorClassIdentifier: 
-  text: '"Do you have a diet cola?"'
+  text: '"What was your favorite class?"'
   children:
-  - Za8d176c0-0301-4c00-9485-cbcb5af7ea95
+  - Z6c57a379-7ccf-4be8-812e-1ebd84a285dc
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 262
+    y: 16
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &8188900284527431933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z81ff4c84-0dc9-4a93-9e51-29fd5a3aa8f6
+  m_EditorClassIdentifier: 
+  text: '"Getting upset customers to turn around and like your business is an important
+    part of customer service."'
+  children: []
   isPlayerSpeaking: 0
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
     x: 921
-    y: 87
+    y: 313
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &8780941259060232690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z3a946476-222c-4397-ac87-cbee4d539298
+  m_EditorClassIdentifier: 
+  text: '"How do you think marketing can help in a customer support role?"'
+  children:
+  - Z81ff4c84-0dc9-4a93-9e51-29fd5a3aa8f6
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 683
+    y: 166
     width: 200
     height: 125
   onEnterAction: 

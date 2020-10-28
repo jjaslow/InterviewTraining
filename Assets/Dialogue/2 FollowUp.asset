@@ -1,31 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6286162880531553719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: ca7713d4-9ccf-4336-95ec-2904e611c04c
-  m_EditorClassIdentifier: 
-  text: What else ya wanna know?
-  children: []
-  isPlayerSpeaking: 0
-  isAChoice: 0
-  rectPosition:
-    serializedVersion: 2
-    x: 10
-    y: 10
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,5 +13,31 @@ MonoBehaviour:
   m_Name: 2 FollowUp
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -6286162880531553719}
+  - {fileID: 7973409227507705157}
   newNodeOffset: {x: 225, y: 0}
+--- !u!114 &7973409227507705157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z26143634-7df2-4bf1-9e3f-962f3656196f
+  m_EditorClassIdentifier: 
+  text: '"Select my resume to ask me any additional questions."'
+  children: []
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 69
+    y: 68
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 

@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 
@@ -120,6 +119,8 @@ namespace RPG.Dialogue
             return parent.GetChildren().Contains(child.name);
         }
 
+
+#if UNITY_EDITOR
         public void AddChild(DialogueNode parent, DialogueNode child)
         {
             parent.AddChild(child.name);
@@ -132,7 +133,7 @@ namespace RPG.Dialogue
             OnValidate();
         }
 
-#if UNITY_EDITOR
+
         public void CreateNewNode(DialogueNode parent)
         {
             if (AssetDatabase.GetAssetPath(this) != "")
@@ -145,8 +146,8 @@ namespace RPG.Dialogue
             //DialogueNode node = new DialogueNode();
             DialogueNode node = CreateInstance<DialogueNode>();
 
-            node.name = System.Guid.NewGuid().ToString();
-
+            node.name = "Z"+System.Guid.NewGuid().ToString();
+            //node.hideFlags = HideFlags.HideInHierarchy;
 
             nodes.Add(node);
 

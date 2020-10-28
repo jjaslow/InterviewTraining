@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9160148353984596049
+--- !u!114 &-8836112649202529367
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Z69d6fb1b-e0bc-43cf-8308-d28795dabb94
+  m_Name: Za55f6c47-594a-44cb-8e11-571b1c9a7445
   m_EditorClassIdentifier: 
-  text: '"I''m glad you were able to calm the situation down."'
+  text: '"That''s ok."'
   children: []
   isPlayerSpeaking: 1
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 759
-    y: 192
+    x: 1178
+    y: 26
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
   score: 0
   description: 
---- !u!114 &-9095042313181384980
+--- !u!114 &-4333189425068118058
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36,55 +36,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Z0cb1deaa-2c49-4601-a7a1-ec08f4138b9e
+  m_Name: Za1948e21-fd0d-4b19-a097-6864aee268bf
   m_EditorClassIdentifier: 
-  text: '"What prompted the customer to do that, and what did you do about the situation?"'
+  text: '"I''m not sure."'
   children:
-  - Z0d86bc3c-7513-43aa-945a-cb91b24a6dd8
-  isPlayerSpeaking: 1
-  isAChoice: 1
-  rectPosition:
-    serializedVersion: 2
-    x: 243
-    y: 206
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
---- !u!114 &-8862735767162731539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Zd62a9bcf-bf5f-4ccd-a4f9-22b4078e1f50
-  m_EditorClassIdentifier: 
-  text: '"I calmly explained to her as sweetly as I could that there is a maximum
-    number of garments anyone can have in a fitting room. I could only bring her
-    more, if she was able to hand me the garments she had already tried. Luckily,
-    she calmed down and did so. After all, I didn''t create the store policies."'
-  children:
-  - Zb644f066-40e9-4f8e-9820-977ba4540474
-  - Z69d6fb1b-e0bc-43cf-8308-d28795dabb94
+  - Z81dffba0-c794-4c37-8eb8-187e9e4bc259
+  - Za55f6c47-594a-44cb-8e11-571b1c9a7445
   isPlayerSpeaking: 0
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 539
-    y: 359
+    x: 949
+    y: 167
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
   score: 0
   description: 
---- !u!114 &-8348121474266435819
+--- !u!114 &-2559326330330204232
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,23 +64,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Zd0835a22-b1ea-4de8-9a4a-a0bfd1484588
+  m_Name: Z81dffba0-c794-4c37-8eb8-187e9e4bc259
   m_EditorClassIdentifier: 
-  text: '"I would probably get fired"'
+  text: '"Would you say you were average, below average or above average."'
+  children:
+  - Zc14fc0bb-b730-4dac-b52f-ec5695016d52
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 1174
+    y: 167
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &-2455345698995946790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z959addd5-232c-4c59-a2a0-bc73f729f2e7
+  m_EditorClassIdentifier: 
+  text: '"That sounds about right."'
   children: []
   isPlayerSpeaking: 0
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 989
-    y: 419
+    x: 916
+    y: 474
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
   score: 0
   description: 
---- !u!114 &-6807551803404670009
+--- !u!114 &-645711147553217088
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,70 +117,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Z99be723d-bb48-4fd6-923f-c42237907b64
+  m_Name: Za33acfd2-42eb-4d13-aed3-abe5bc0f851e
   m_EditorClassIdentifier: 
-  text: '"How dreadful! That is indeed a difficult customer."'
+  text: '"Please tell me about some specific things you did that helped you meet
+    your goals."'
+  children:
+  - Z63564d07-e51f-4a6d-a5e9-589f56afe1fb
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 250
+    y: 2
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &-73684653151122367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Zc14fc0bb-b730-4dac-b52f-ec5695016d52
+  m_EditorClassIdentifier: 
+  text: '"I was probably average."'
   children: []
-  isPlayerSpeaking: 1
-  isAChoice: 1
-  rectPosition:
-    serializedVersion: 2
-    x: 253
-    y: 12
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
---- !u!114 &-3336110833622233351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Zb644f066-40e9-4f8e-9820-977ba4540474
-  m_EditorClassIdentifier: 
-  text: '"Why didnt you just bend the rules this one time?"'
-  children:
-  - Zd0835a22-b1ea-4de8-9a4a-a0bfd1484588
-  isPlayerSpeaking: 1
-  isAChoice: 1
-  rectPosition:
-    serializedVersion: 2
-    x: 764
-    y: 419
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
---- !u!114 &-822982033006524961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Z9d626758-6310-40b6-97fc-7a5868da5055
-  m_EditorClassIdentifier: 
-  text: '"Tell me about a difficult customer you had."'
-  children:
-  - Za7d13f08-9e18-4862-aa24-bda849840014
-  isPlayerSpeaking: 1
+  isPlayerSpeaking: 0
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 10
-    y: 10
+    x: 1399
+    y: 167
     width: 200
     height: 125
   onEnterAction: 
@@ -200,24 +171,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1e81341664088a8468157a48bde72cbe, type: 3}
-  m_Name: ResumeSection2
+  m_Name: ResumeSection5
   m_EditorClassIdentifier: 
   nodes:
-  - {fileID: -822982033006524961}
-  - {fileID: 5978492638127766859}
-  - {fileID: -9095042313181384980}
-  - {fileID: -6807551803404670009}
-  - {fileID: 5644185135727187937}
-  - {fileID: 8028855870198434892}
-  - {fileID: 5855719273990375155}
-  - {fileID: -8862735767162731539}
-  - {fileID: 7146343358165718193}
-  - {fileID: -3336110833622233351}
-  - {fileID: -9160148353984596049}
-  - {fileID: -8348121474266435819}
-  - {fileID: 4503315208561230228}
+  - {fileID: 7785516098148284695}
+  - {fileID: 4115086693152075788}
+  - {fileID: 2680117391107701824}
+  - {fileID: -645711147553217088}
+  - {fileID: 4281137942706448625}
+  - {fileID: 1864372000981452848}
+  - {fileID: 5992905800934175085}
+  - {fileID: -2455345698995946790}
+  - {fileID: 423801751681570273}
+  - {fileID: 4836823520932822783}
+  - {fileID: -4333189425068118058}
+  - {fileID: -2559326330330204232}
+  - {fileID: -8836112649202529367}
+  - {fileID: -73684653151122367}
   newNodeOffset: {x: 225, y: 0}
---- !u!114 &4503315208561230228
+--- !u!114 &423801751681570273
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -227,23 +199,162 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Z1be83eb0-3597-49bd-b3e3-9cd53f310af4
+  m_Name: Z63564d07-e51f-4a6d-a5e9-589f56afe1fb
   m_EditorClassIdentifier: 
-  text: '"I would have."'
+  text: '"I always have a smile on my face. Customers tend to approach friendly reps
+    before grumpy looking ones."'
+  children:
+  - Z2b334a76-3951-494d-a3ab-be8711946d9e
+  - Z6b6f19b4-c1b1-4cc6-baa7-949860ede82c
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 475
+    y: 2
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &1864372000981452848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Za267a541-b623-4f6b-abc7-d71a2c5f9760
+  m_EditorClassIdentifier: 
+  text: '"So thats 20 items sold per hour."'
+  children:
+  - Z959addd5-232c-4c59-a2a0-bc73f729f2e7
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 685
+    y: 475
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &2680117391107701824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Zbc301609-1996-41e9-8034-0c9b827ea296
+  m_EditorClassIdentifier: 
+  text: '"What was the average price for one piece of clothing?"'
+  children:
+  - Ze6152844-ccbd-4b83-85e9-04cb0e999959
+  isPlayerSpeaking: 1
+  isAChoice: 1
+  rectPosition:
+    serializedVersion: 2
+    x: 268
+    y: 154
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &4115086693152075788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z4206d5cf-2588-4d41-9a36-0876f8f7a780
+  m_EditorClassIdentifier: 
+  text: '"We were supposed to sell $1,000 of merchandise per hour."'
+  children:
+  - Zbc301609-1996-41e9-8034-0c9b827ea296
+  - Za33acfd2-42eb-4d13-aed3-abe5bc0f851e
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 23
+    y: 159
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &4281137942706448625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Ze6152844-ccbd-4b83-85e9-04cb0e999959
+  m_EditorClassIdentifier: 
+  text: '"About $50."'
+  children:
+  - Za267a541-b623-4f6b-abc7-d71a2c5f9760
+  - Z6b6f19b4-c1b1-4cc6-baa7-949860ede82c
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 487
+    y: 313
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &4836823520932822783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z2b334a76-3951-494d-a3ab-be8711946d9e
+  m_EditorClassIdentifier: 
+  text: '"You do have a nice smile."'
   children: []
   isPlayerSpeaking: 1
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 973
-    y: 31
+    x: 752
+    y: 0
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
   score: 0
   description: 
---- !u!114 &5644185135727187937
+--- !u!114 &5992905800934175085
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,55 +364,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Z0d86bc3c-7513-43aa-945a-cb91b24a6dd8
+  m_Name: Z6b6f19b4-c1b1-4cc6-baa7-949860ede82c
   m_EditorClassIdentifier: 
-  text: '"The customer wanted me to bring her more different-sized blouses to the
-    fitting room to try on but she had exceeded the maximum allowed in her possession.
-    I asked her to pass over what she had already tried on but she refused. Instead,
-    she threw a hanger at my head."'
+  text: '"How was your average vs your co-workers?"'
   children:
-  - Ze1ac34e3-ec9d-440c-b9cc-114e9fbbddf0
-  - Z63c184c9-08d0-495c-9803-e582493695dd
-  isPlayerSpeaking: 0
-  isAChoice: 0
-  rectPosition:
-    serializedVersion: 2
-    x: 289
-    y: 341
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
---- !u!114 &5855719273990375155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Z63c184c9-08d0-495c-9803-e582493695dd
-  m_EditorClassIdentifier: 
-  text: '"Did you call the cops on her for assault?"'
-  children:
-  - Z9398abdb-afff-452f-bec3-0a9c3c6f4393
+  - Za1948e21-fd0d-4b19-a097-6864aee268bf
   isPlayerSpeaking: 1
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 518
-    y: 28
+    x: 724
+    y: 168
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
   score: 0
   description: 
---- !u!114 &5978492638127766859
+--- !u!114 &7785516098148284695
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -311,73 +391,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Za7d13f08-9e18-4862-aa24-bda849840014
+  m_Name: Z04d05fcd-2b69-4ce8-8013-18319c8ca28b
   m_EditorClassIdentifier: 
-  text: '"Someone threw a hanger at my head!"'
+  text: '"What was your sales quota?"'
   children:
-  - Z0cb1deaa-2c49-4601-a7a1-ec08f4138b9e
-  - Z99be723d-bb48-4fd6-923f-c42237907b64
-  isPlayerSpeaking: 0
-  isAChoice: 0
-  rectPosition:
-    serializedVersion: 2
-    x: 18
-    y: 206
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
---- !u!114 &7146343358165718193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Z9398abdb-afff-452f-bec3-0a9c3c6f4393
-  m_EditorClassIdentifier: 
-  text: '"No."'
-  children:
-  - Z1be83eb0-3597-49bd-b3e3-9cd53f310af4
-  - Z69d6fb1b-e0bc-43cf-8308-d28795dabb94
-  isPlayerSpeaking: 0
-  isAChoice: 0
-  rectPosition:
-    serializedVersion: 2
-    x: 754
-    y: 29
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
---- !u!114 &8028855870198434892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Ze1ac34e3-ec9d-440c-b9cc-114e9fbbddf0
-  m_EditorClassIdentifier: 
-  text: '"How did you help the customer try on the different-sized blouses she wanted?"'
-  children:
-  - Zd62a9bcf-bf5f-4ccd-a4f9-22b4078e1f50
+  - Z4206d5cf-2588-4d41-9a36-0876f8f7a780
   isPlayerSpeaking: 1
-  isAChoice: 1
+  isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 530
-    y: 206
+    x: 10
+    y: 12
     width: 200
     height: 125
   onEnterAction: 
