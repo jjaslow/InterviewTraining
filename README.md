@@ -1,2 +1,2 @@
 # InterviewTraining
-VR training experience
+VR training exercise for Oculus Rift.
