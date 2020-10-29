@@ -47,8 +47,8 @@ public class Resume : MonoBehaviour
             candidate.SetActive(false);
 
             //transform.LookAt(Camera.main.transform);
-            transform.position = Camera.main.transform.position - new Vector3(0, 0, .75f);
-            transform.localScale *= 2.5f;
+            transform.position = Camera.main.transform.position - new Vector3(0, 0, .85f);
+            transform.localScale *= 2.65f;
             transform.eulerAngles += new Vector3(90, 0, 0);
         }
 
@@ -59,7 +59,7 @@ public class Resume : MonoBehaviour
     {
         Debug.Log("RETURN TO DESK");
 
-        transform.localScale /= 2.5f;
+        transform.localScale /= 2.65f;
         transform.eulerAngles -= new Vector3(90, 0, 0);
         transform.position = startPosition;
 

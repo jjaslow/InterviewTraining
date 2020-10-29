@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 using static OVRInput;
 
@@ -8,6 +9,7 @@ public class PhysicsPointer : MonoBehaviour
     public float defaultLength = 5f;
     private LineRenderer lineRenderer = null;
     bool isPressing = false;
+    bool pressingTransitioning = false;
 
     private void Awake()
     {
@@ -21,7 +23,7 @@ public class PhysicsPointer : MonoBehaviour
 
     private void UpdateLength()
     {
-        lineRenderer.SetPosition(0, transform.position);
+        lineRenderer.SetPosition(0, transform.position + (transform.forward * .05f));
         lineRenderer.SetPosition(1, CalculateEnd());
     }
 
@@ -66,30 +68,28 @@ public class PhysicsPointer : MonoBehaviour
 
         pe.OnHover();
 
-        if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.RTouch) > .5f && !isPressing)
+        if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.RTouch) > .6f && !isPressing)
         {
             pe.OnPointerClick();
             isPressing = true;
         }
 
-        if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.RTouch) < .5f && isPressing)
+        if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.RTouch) < .4f && isPressing && !pressingTransitioning)
         {
-            isPressing = false;
+            StartCoroutine(ReAllowPressing());
             pe.OnPointerRelease();
         }
 
 
-        //else if (!startedTalking && hit.collider.gameObject.GetComponent<Hostess>() != null)
-        //{
-        //    if (OVRInput.Get(OVRInput.Axis1D.PrimaryIndexTrigger, OVRInput.Controller.RTouch) > .5f)
-        //    {
-        //        startedTalking = true;
-        //        hit.collider.gameObject.GetComponent<Hostess>().StartTalking();
-        //    }
-        //}
     }
 
-
+    IEnumerator ReAllowPressing()
+    {
+        pressingTransitioning = true;
+        yield return new WaitForSeconds(0.5f);
+        isPressing = false;
+        pressingTransitioning = false;
+    }
 
 }
 

@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z2274584d-f3e9-4808-83dd-2048f1dd9bbe
   m_EditorClassIdentifier: 
-  text: '"Thank you for coming in to interview for the customer support position."'
+  text: '"Thank you for coming in to interview for the customer service position."'
   children:
   - Ze578486d-66df-4569-a176-1ebb5fb633b7
   isPlayerSpeaking: 1

@@ -19,10 +19,17 @@ namespace RPG.Dialogue
 
         AIConversant currentConversant = null;
 
-        [SerializeField]
-        string playerName;
+        string playerName = "Hiring Manager";
         [SerializeField]
         string candidatesName;
+
+
+        private void Start()
+        {
+            string name = PlayerPrefs.GetString("playerName");
+            if(name!="")
+                playerName = PlayerPrefs.GetString("playerName");
+        }
 
         public void StartDialogue(Dialogue newDialogue, AIConversant NPC)
         {
@@ -164,10 +171,10 @@ namespace RPG.Dialogue
 
         void AddNodeToScore(int score, string description)
         {
-            var newScore = new GameManager.Score(score, description);
+            var newScore = new GameManager.Score(score, description, currentDialogue.name);
             Debug.Log("add score");
 
-            if(!GameManager.Instance.ScoreAlreadyAdded(description))
+            if(!GameManager.Instance.ScoreAlreadyAdded(description, currentDialogue.name))
                 GameManager.Instance.AddToScore(newScore);
         }
 

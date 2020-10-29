@@ -20,13 +20,13 @@ MonoBehaviour:
   rectPosition:
     serializedVersion: 2
     x: 247
-    y: 220
+    y: 219
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 5
+  description: You asked more about their experiences
 --- !u!114 &-7404606866870605711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   score: 5
-  description: 'You asked a follow up question '
+  description: Great! You asked a follow-up question.
 --- !u!114 &-6872610334640339256
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z4ec8f9ef-dde9-45b7-b018-499a670b96a3
   m_EditorClassIdentifier: 
-  text: '"What did the customer do?"'
+  text: '"What was the customer''s reaction to your assistance?"'
   children:
   - Z5832d769-ec14-4fa5-869c-d0066d95d751
   isPlayerSpeaking: 1
@@ -188,8 +188,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 5
+  description: Fabulous! You asked about the impact of what they did.
 --- !u!114 &-4005726273228427750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -298,8 +298,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: -5
+  description: Ask a follow-up question to learn more about the results.
 --- !u!114 &4629790519095324883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,13 +319,13 @@ MonoBehaviour:
   rectPosition:
     serializedVersion: 2
     x: 261
-    y: 7
+    y: 5
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
   score: -5
-  description: You didnt ask about their experiences
+  description: You should ask more about their experiences
 --- !u!114 &6533499613194327103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,9 +339,8 @@ MonoBehaviour:
   m_Name: Z6c3c7b31-ec29-4522-a0ea-d484dc798725
   m_EditorClassIdentifier: 
   text: '"I asked them what size their mother wears. Then I collected all the green
-    tops we had in stock for that size, there were only 4 of them. I described them
-    the best I could (dark vs light green) and had them touch each top to feel the
-    fabric."'
+    tops we had in stock for that size -- there were only 4 of them. I described
+    them the best I could and had them touch each top to feel the fabric."'
   children:
   - Za905f003-83d6-4b51-8313-9abf3fbab7cd
   - Z4ec8f9ef-dde9-45b7-b018-499a670b96a3
@@ -404,10 +403,10 @@ MonoBehaviour:
   rectPosition:
     serializedVersion: 2
     x: 526
-    y: 20
+    y: 19
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: -5
+  description: Use the opportunity to learn exactly how they provided excellent service

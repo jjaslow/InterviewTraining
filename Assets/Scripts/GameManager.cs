@@ -34,11 +34,13 @@ public class GameManager : MonoBehaviour
     [System.Serializable]
     public class Score
     {
+        public string dialogueName;
         public int count;
         public string description;
 
-        public Score(int count, string description)
+        public Score(int count, string description, string dialogueName)
         {
+            this.dialogueName = dialogueName;
             this.count = count;
             this.description = description;
         }
@@ -82,14 +84,13 @@ public class GameManager : MonoBehaviour
             completedDialogues.Add(d);
     }
 
-    public bool ScoreAlreadyAdded(string description)
+    public bool ScoreAlreadyAdded(string description, string name)
     {
         foreach (Score score in scores)
         {
-            if (score.description == description)
+            if (score.description == description && score.dialogueName == name)
                 return true;
         }
-
         return false;
     }
 
