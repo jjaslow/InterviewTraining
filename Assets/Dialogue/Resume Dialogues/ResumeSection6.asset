@@ -19,7 +19,7 @@ MonoBehaviour:
   rectPosition:
     serializedVersion: 2
     x: 684
-    y: 18
+    y: 17
     width: 200
     height: 125
   onEnterAction: 

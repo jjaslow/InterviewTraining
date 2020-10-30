@@ -12,14 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Zc12a1284-207e-4513-823a-694bee4d6c64
   m_EditorClassIdentifier: 
-  text: 
-  children: []
+  text: None
+  children:
+  - Zfcb26c66-3830-4441-8e57-3cb4949ee817
   isPlayerSpeaking: 1
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 288
-    y: 16
+    x: 298
+    y: 15
     width: 200
     height: 125
   onEnterAction: 
@@ -98,7 +99,34 @@ MonoBehaviour:
   - {fileID: -1646388755232394249}
   - {fileID: 6864325025695689925}
   - {fileID: -8733719714620239725}
+  - {fileID: 2063359378151767996}
   newNodeOffset: {x: 225, y: 0}
+--- !u!114 &2063359378151767996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Zfcb26c66-3830-4441-8e57-3cb4949ee817
+  m_EditorClassIdentifier: 
+  text: OK, thank you for meeting me.
+  children: []
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 1165
+    y: 380
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: End Interview
+  score: 0
+  description: 
 --- !u!114 &6864325025695689925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,8 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z5137d834-a594-4720-8865-0d4932a28f2a
   m_EditorClassIdentifier: 
-  text: 
-  children: []
+  text: Health
+  children:
+  - Zfcb26c66-3830-4441-8e57-3cb4949ee817
   isPlayerSpeaking: 1
   isAChoice: 0
   rectPosition:

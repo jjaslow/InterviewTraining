@@ -243,10 +243,12 @@ namespace RPG.Dialogue.Editor
             //string newID = EditorGUILayout.TextField(dn.uniqueID);
 
             string speaker;
-            if (dn.IsPlayerSpeaking())
-                speaker = "Player";
+            if (dn.IsAChoice())
+                speaker = "Player Choice";
+            else if (dn.IsPlayerSpeaking())
+                speaker = "Player Statement";
             else
-                speaker = "Candidate";
+                speaker = "Candidate Statement";
              
             EditorGUILayout.LabelField(speaker);
 

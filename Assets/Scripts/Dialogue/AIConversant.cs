@@ -29,7 +29,7 @@ namespace RPG.Dialogue
                 return;
 
             if (getExternalDialogue)
-                dialogue = GetNextDialogue();
+                dialogue = GameManager.Instance.ProvideExternalDialogue();
 
             if (dialogue == null)
                 return;
@@ -47,11 +47,7 @@ namespace RPG.Dialogue
             GetComponent<Collider>().enabled = false;
         }
 
-        Dialogue GetNextDialogue()
-        {
-            Debug.Log("fetching external dialogue");
-            return GameManager.Instance.ProvideDialogue();
-        }
+
 
     }
 

@@ -74,8 +74,8 @@ MonoBehaviour:
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 1146
-    y: 87
+    x: 1144
+    y: 83
     width: 200
     height: 125
   onEnterAction: 

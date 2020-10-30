@@ -4,8 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-
-
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,35 +12,40 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     [SerializeField]
-    List<Dialogue> dialogues = new List<Dialogue>();
+    AudioSource _voiceOverAudio;
+    [SerializeField]
+    GameObject resumeSection;
+
+    [Space]
+    [SerializeField]
+    List<Dialogue> candidateDialogues = new List<Dialogue>();
     int currentDialogue = 0;
     int numberOfResumeDialogues;
     int totalNumberOfDialogues;
 
+    [Space]
     [SerializeField]
     List<Dialogue> completedDialogues = new List<Dialogue>();
 
+    [Space]
     [SerializeField]
     List<Score> scores = new List<Score>();
 
-    [Space]
-    [SerializeField]
-    AudioSource _voiceOverAudio;
-    [SerializeField]
-    GameObject resumeSection;
+
+   
 
 
     [System.Serializable]
     public class Score
     {
         public string dialogueName;
-        public int count;
+        public int score;
         public string description;
 
-        public Score(int count, string description, string dialogueName)
+        public Score(int score, string description, string dialogueName)
         {
             this.dialogueName = dialogueName;
-            this.count = count;
+            this.score = score;
             this.description = description;
         }
     }
@@ -62,7 +66,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         numberOfResumeDialogues = resumeSection.transform.childCount;
-        totalNumberOfDialogues = numberOfResumeDialogues + dialogues.Count;
+        totalNumberOfDialogues = numberOfResumeDialogues + candidateDialogues.Count;
     }
 
 
@@ -80,6 +84,9 @@ public class GameManager : MonoBehaviour
 
     public void AddToCompletedDialogues(Dialogue d)
     {
+        if (!d.name.Contains("ResumeSection"))
+            return;
+
         if(!completedDialogues.Contains(d))
             completedDialogues.Add(d);
     }
@@ -94,35 +101,37 @@ public class GameManager : MonoBehaviour
         return false;
     }
 
-    public Dialogue ProvideDialogue()
+    public List<Score> GetFinalScoreList()
     {
-        if (dialogues.Count == 0)
+        return scores;
+    }
+
+    public Dialogue ProvideExternalDialogue()
+    {
+        if (candidateDialogues.Count == 0 || completedDialogues.Count == totalNumberOfDialogues)
             return null;
 
-        if (completedDialogues.Count == totalNumberOfDialogues)
-            EndOfInterview();
+        if(completedDialogues.Count == numberOfResumeDialogues)
+            currentDialogue++;
 
-        Dialogue dia = dialogues[currentDialogue];
+        Dialogue dia = candidateDialogues[currentDialogue];
 
-        UpdateCurrentDialogue();
+        if (currentDialogue == 0)
+            currentDialogue++;
 
         return dia;
     }
 
-    private void UpdateCurrentDialogue()
-    {
-        if (currentDialogue == 0)
-            currentDialogue++;
-        else if (completedDialogues.Count < numberOfResumeDialogues + 2-1)    //resume items + 1 and 2 candidate
-            return;
-        else
-            currentDialogue++;
-    }
 
-    private void EndOfInterview()
+    public void EndOfInterview()
     {
         Debug.Log("END OF INTERVIEW");
+        SceneManager.LoadScene(2);
     }
 
-    //TODO:: count score
+    public int GetTotalNumberOfDialogues()
+    {
+        return totalNumberOfDialogues;
+    }
+
 }

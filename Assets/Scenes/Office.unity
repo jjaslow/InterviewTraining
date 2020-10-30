@@ -4872,7 +4872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bea8958d135a824190b1f87dbc24c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogues:
+  candidateDialogues:
   - {fileID: 11400000, guid: 2a62422a59b05ea46ba219d75b2e6491, type: 2}
   - {fileID: 11400000, guid: c47edc2348f5fbe49ba5ec14b49d226b, type: 2}
   - {fileID: 11400000, guid: 5ebd2a222af4e60449138a3430a4401f, type: 2}
@@ -5093,6 +5093,34 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &1922674667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1922674661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c46e7680aa1314b8068f60f7a13642, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: End Interview
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1835755854}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: EndOfInterview
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1962100398
 GameObject:
   m_ObjectHideFlags: 0

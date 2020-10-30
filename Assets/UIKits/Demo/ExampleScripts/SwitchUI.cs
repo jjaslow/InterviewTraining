@@ -31,7 +31,6 @@ public class SwitchUI : MonoBehaviour
 
     void LoadOfficeScene()
     {
-        Debug.Log("My Name is: " + nameText.text);
         PlayerPrefs.SetString("playerName", nameText.text);
         SceneManager.LoadScene(1);
     }

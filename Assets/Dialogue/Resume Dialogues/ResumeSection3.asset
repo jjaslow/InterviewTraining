@@ -1,32 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-6384781219250645953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Zc95ad527-9098-4405-9d27-6e134e11cc6a
-  m_EditorClassIdentifier: 
-  text: '"What did you do in 2017? I see a 1 year gap in your resume."'
-  children:
-  - Z79812cfa-112e-42eb-b3b0-475d49890477
-  isPlayerSpeaking: 1
-  isAChoice: 0
-  rectPosition:
-    serializedVersion: 2
-    x: 245
-    y: 251
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: 0
-  description: 
 --- !u!114 &-5903746403215895563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,8 +19,8 @@ MonoBehaviour:
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 956
-    y: 527
+    x: 1251
+    y: 467
     width: 200
     height: 125
   onEnterAction: 
@@ -74,8 +47,8 @@ MonoBehaviour:
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 255
-    y: 397
+    x: 349
+    y: 353
     width: 200
     height: 125
   onEnterAction: 
@@ -101,14 +74,15 @@ MonoBehaviour:
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 498
-    y: 249
+    x: 592
+    y: 254
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: -2
+  description: Keep the conversation focused on learning something professional about
+    the candidate.
 --- !u!114 &-494206431899856385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,15 +95,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z406006b7-7e6e-4eb5-9b71-7965fc93031a
   m_EditorClassIdentifier: 
-  text: '"Did you work, or otherwise try to learn during your time off?"'
+  text: '"Did you work, or otherwise try to learn something specific during your
+    time traveling?"'
   children:
   - Z1060bb20-bbcb-46a5-ad1f-036a0f64913b
   isPlayerSpeaking: 1
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 480
-    y: 398
+    x: 588
+    y: 468
     width: 200
     height: 125
   onEnterAction: 
@@ -154,14 +129,15 @@ MonoBehaviour:
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 957
-    y: 244
+    x: 1170
+    y: 275
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: -2
+  description: Keep your opinions to yourself. Forward the conversation to learn
+    how the candidate has the interest and skills to do well in the job.
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,10 +154,8 @@ MonoBehaviour:
   - {fileID: 7402644228098834706}
   - {fileID: 6410237521105958123}
   - {fileID: 8587593916159859328}
-  - {fileID: 5958113756649758748}
   - {fileID: 968421163925069329}
   - {fileID: 4031922110488979238}
-  - {fileID: -6384781219250645953}
   - {fileID: -5032029033227122985}
   - {fileID: -494206431899856385}
   - {fileID: -4354206769788366088}
@@ -239,8 +213,8 @@ MonoBehaviour:
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 723
-    y: 53
+    x: 698
+    y: 70
     width: 200
     height: 125
   onEnterAction: 
@@ -263,7 +237,7 @@ MonoBehaviour:
   children:
   - Z29d14e6d-0c9d-41de-86d3-33032b309923
   isPlayerSpeaking: 1
-  isAChoice: 1
+  isAChoice: 0
   rectPosition:
     serializedVersion: 2
     x: 935
@@ -292,41 +266,14 @@ MonoBehaviour:
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 723
-    y: 249
+    x: 965
+    y: 172
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
   score: 0
   description: 
---- !u!114 &5958113756649758748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
-  m_Name: Zfb05f2d9-a17d-4526-be5e-c15ce46522f8
-  m_EditorClassIdentifier: 
-  text: '"Why did you move from Philadelphia to New York?"'
-  children:
-  - Z8925f280-156d-4bf5-bb93-eb2eb105fafd
-  isPlayerSpeaking: 1
-  isAChoice: 0
-  rectPosition:
-    serializedVersion: 2
-    x: 485
-    y: 21
-    width: 200
-    height: 125
-  onEnterAction: 
-  onExitAction: 
-  score: -5
-  description: Should have asked about the gap first
 --- !u!114 &6410237521105958123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,21 +286,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Zc54e558f-1b7d-4d23-8fbd-bafe97bc5591
   m_EditorClassIdentifier: 
-  text: Ask them about the move to New York.
+  text: '"Why did you move from Philadelphia to New York?"'
   children:
-  - Zfb05f2d9-a17d-4526-be5e-c15ce46522f8
+  - Z8925f280-156d-4bf5-bb93-eb2eb105fafd
   isPlayerSpeaking: 1
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 261
-    y: 18
+    x: 332
+    y: 12
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 2
+  description: Good to understand their reason for moving from one city to another.
 --- !u!114 &6557223026366867353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -373,14 +320,14 @@ MonoBehaviour:
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 930
-    y: 398
+    x: 1039
+    y: 448
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 2
+  description: Good job steering the conversation back to the job.
 --- !u!114 &7402644228098834706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,8 +377,8 @@ MonoBehaviour:
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 705
-    y: 398
+    x: 828
+    y: 378
     width: 200
     height: 125
   onEnterAction: 
@@ -450,18 +397,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z1dd5806a-a44a-4833-9ced-61aa181f5dea
   m_EditorClassIdentifier: 
-  text: Ask them about the 2 year gap between jobs.
+  text: '"What did you do in 2017? I see a 1 year gap in your resume."'
   children:
-  - Zc95ad527-9098-4405-9d27-6e134e11cc6a
+  - Z79812cfa-112e-42eb-b3b0-475d49890477
   isPlayerSpeaking: 1
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 24
-    y: 168
+    x: 226
+    y: 169
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 5
+  description: Good eye! You noticed the gap in their resume that they need to account
+    for.

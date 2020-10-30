@@ -18,8 +18,8 @@ MonoBehaviour:
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 759
-    y: 192
+    x: 973
+    y: 205
     width: 200
     height: 125
   onEnterAction: 
@@ -51,8 +51,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 5
+  description: Good job! You asked a thoughtful follow-up question.
 --- !u!114 &-8862735767162731539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,8 +134,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: -5
+  description: You should ask the candidate more questions about what happened.
 --- !u!114 &-3336110833622233351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,8 +161,9 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 5
+  description: This is a good question to understand if the candidate will follow
+    policies.
 --- !u!114 &-822982033006524961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z9d626758-6310-40b6-97fc-7a5868da5055
   m_EditorClassIdentifier: 
-  text: '"Tell me about a difficult customer you had."'
+  text: '"Tell me about a difficult customer you had to deal with."'
   children:
   - Za7d13f08-9e18-4862-aa24-bda849840014
   isPlayerSpeaking: 1
@@ -235,14 +236,15 @@ MonoBehaviour:
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 973
-    y: 31
+    x: 1023
+    y: 24
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: -5
+  description: The purpose of the interview is to learn how the candidate would handle
+    the situation. Focus on the task at hand.
 --- !u!114 &5644185135727187937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -299,8 +301,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: -10
+  description: Leave law enforcement to the authorities.
 --- !u!114 &5978492638127766859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,7 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Za7d13f08-9e18-4862-aa24-bda849840014
   m_EditorClassIdentifier: 
-  text: '"Someone threw a hanger at my head!"'
+  text: '"A customer once threw a hanger at my head!"'
   children:
   - Z0cb1deaa-2c49-4601-a7a1-ec08f4138b9e
   - Z99be723d-bb48-4fd6-923f-c42237907b64

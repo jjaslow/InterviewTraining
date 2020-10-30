@@ -9,9 +9,6 @@ using UnityEngine.UI;
 
 public class PointerEvents : MonoBehaviour//, IPointerEnterHandler, IPointerExitHandler, IPointerDownHandler, IPointerUpHandler, IPointerClickHandler
 {
-    //[SerializeField] private Color normalColor;
-    //[SerializeField] private Color enterColor;
-    //[SerializeField] private Color downColor;
     [SerializeField] public UnityEvent OnClick = new UnityEvent();
 
     Outline outline;
@@ -30,16 +27,11 @@ public class PointerEvents : MonoBehaviour//, IPointerEnterHandler, IPointerExit
 
         if(rend!=null)
             startColor = rend.material.color;
-
-        //outline.OutlineColor = Color.red;
-        //outline.OutlineMode = Outline.Mode.OutlineVisible;
-        //outline.OutlineWidth = 3f;
     }
 
     private void Update()
     {
         isHovering = false;
-        //gameObject.GetComponentInChildren<Renderer>().material.color = normalColor;
 
         if(outline!=null)
             outline.enabled = false;
@@ -57,7 +49,6 @@ public class PointerEvents : MonoBehaviour//, IPointerEnterHandler, IPointerExit
     public void OnHover()
     {
         Debug.Log("Pointer EVENTS pointing at: " + gameObject.name);
-        //gameObject.GetComponentInChildren<Renderer>().material.color = enterColor;
         isHovering = true;
 
         if(outline!=null)
@@ -77,7 +68,6 @@ public class PointerEvents : MonoBehaviour//, IPointerEnterHandler, IPointerExit
     public void OnPointerClick()
     {
         OnClick.Invoke();
-        //gameObject.GetComponentInChildren<Renderer>().material.color = downColor;
         Debug.Log("Clicked on " + name);
     }
 
