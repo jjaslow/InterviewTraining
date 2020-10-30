@@ -56,6 +56,34 @@ MonoBehaviour:
   onExitAction: 
   score: 0
   description: 
+--- !u!114 &-636361883620078645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z557c55e0-b237-4a03-89b9-cfe6014b87eb
+  m_EditorClassIdentifier: 
+  text: '"The company does not empower Customer Service Reps to resolve prroblems
+    on their own. My supervisor has to step in to speak to the customer to approve
+    any proposed resolution."'
+  children: []
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 1166
+    y: 505
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
 --- !u!114 &-448040255411033097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,7 +100,7 @@ MonoBehaviour:
   children:
   - Z236fbe56-3944-4125-bdb0-f70f80db2fa2
   isPlayerSpeaking: 1
-  isAChoice: 0
+  isAChoice: 1
   rectPosition:
     serializedVersion: 2
     x: 708
@@ -81,8 +109,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 5
+  description: Great question!
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,6 +135,7 @@ MonoBehaviour:
   - {fileID: 645619232268895817}
   - {fileID: 7895578062282337308}
   - {fileID: 961431997436058103}
+  - {fileID: -636361883620078645}
   newNodeOffset: {x: 225, y: 0}
 --- !u!114 &645619232268895817
 MonoBehaviour:
@@ -132,8 +161,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: -5
+  description: 12 calls escalated per day is not great. Probe more into that.
 --- !u!114 &961431997436058103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,8 +208,8 @@ MonoBehaviour:
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 10
-    y: 10
+    x: 9
+    y: 9
     width: 200
     height: 125
   onEnterAction: 
@@ -199,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z236fbe56-3944-4125-bdb0-f70f80db2fa2
   m_EditorClassIdentifier: 
-  text: '"A few, but under 10%."'
+  text: '"A few, around 10%."'
   children:
   - Z77f5107e-1ae5-41a7-9572-c553efdef01b
   - Zcded1eb2-9987-4434-a415-d1282fba4fdc
@@ -227,7 +256,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Zdeac6aac-2e0a-45fe-9251-9fbfe6bfea92
   m_EditorClassIdentifier: 
-  text: '"How were you able to achieve such prompt results?"'
+  text: '"How were you able to achieve such results?"'
   children:
   - Zb177ff19-b3cf-4dc2-a66c-2d9f7f800887
   isPlayerSpeaking: 1
@@ -258,7 +287,7 @@ MonoBehaviour:
   children:
   - Zccb5efcc-2b6e-43ec-8f54-ae43e0a25c1f
   isPlayerSpeaking: 1
-  isAChoice: 0
+  isAChoice: 1
   rectPosition:
     serializedVersion: 2
     x: 728
@@ -310,8 +339,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Zcded1eb2-9987-4434-a415-d1282fba4fdc
   m_EditorClassIdentifier: 
-  text: '"10% sounds a bit high. Why did so many calls need to be escalated?"'
-  children: []
+  text: '"10% sounds a bit high. Why did so many calls each day need to be escalated?"'
+  children:
+  - Z557c55e0-b237-4a03-89b9-cfe6014b87eb
   isPlayerSpeaking: 1
   isAChoice: 1
   rectPosition:
@@ -323,4 +353,4 @@ MonoBehaviour:
   onEnterAction: 
   onExitAction: 
   score: 0
-  description: 
+  description: Excellent job drilling down to discover root causes.

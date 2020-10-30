@@ -4872,14 +4872,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8bea8958d135a824190b1f87dbc24c08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _voiceOverAudio: {fileID: 1835755853}
+  resumeSection: {fileID: 1753247791}
   candidateDialogues:
   - {fileID: 11400000, guid: 2a62422a59b05ea46ba219d75b2e6491, type: 2}
   - {fileID: 11400000, guid: c47edc2348f5fbe49ba5ec14b49d226b, type: 2}
   - {fileID: 11400000, guid: 5ebd2a222af4e60449138a3430a4401f, type: 2}
   completedDialogues: []
   scores: []
-  _voiceOverAudio: {fileID: 1835755853}
-  resumeSection: {fileID: 1753247791}
 --- !u!4 &1835755855
 Transform:
   m_ObjectHideFlags: 0

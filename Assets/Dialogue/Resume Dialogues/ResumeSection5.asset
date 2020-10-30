@@ -24,8 +24,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: -2
+  description: Press harder to gain more insights.
 --- !u!114 &-4333189425068118058
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z81dffba0-c794-4c37-8eb8-187e9e4bc259
   m_EditorClassIdentifier: 
-  text: '"Would you say you were average, below average or above average."'
+  text: '"Did you ever attain the top sales performance for any month?"'
   children:
   - Zc14fc0bb-b730-4dac-b52f-ec5695016d52
   isPlayerSpeaking: 1
@@ -79,8 +79,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 5
+  description: Excellent question to help gain greater context.
 --- !u!114 &-2455345698995946790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Name: Za33acfd2-42eb-4d13-aed3-abe5bc0f851e
   m_EditorClassIdentifier: 
   text: '"Please tell me about some specific things you did that helped you meet
-    your goals."'
+    your quota."'
   children:
   - Z63564d07-e51f-4a6d-a5e9-589f56afe1fb
   isPlayerSpeaking: 1
@@ -133,8 +133,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 5
+  description: Good probing question!
 --- !u!114 &-73684653151122367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,7 +147,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Zc14fc0bb-b730-4dac-b52f-ec5695016d52
   m_EditorClassIdentifier: 
-  text: '"I was probably average."'
+  text: '"No, I not the top sales person. I was probably average at sales.  Customer
+    Service is more my calling."'
   children: []
   isPlayerSpeaking: 0
   isAChoice: 0
@@ -202,7 +203,7 @@ MonoBehaviour:
   m_Name: Z63564d07-e51f-4a6d-a5e9-589f56afe1fb
   m_EditorClassIdentifier: 
   text: '"I always have a smile on my face. Customers tend to approach friendly reps
-    before grumpy looking ones."'
+    before grumpy-looking ones."'
   children:
   - Z2b334a76-3951-494d-a3ab-be8711946d9e
   - Z6b6f19b4-c1b1-4cc6-baa7-949860ede82c
@@ -230,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Za267a541-b623-4f6b-abc7-d71a2c5f9760
   m_EditorClassIdentifier: 
-  text: '"So thats 20 items sold per hour."'
+  text: '"So thats 2 to 3 items sold per hour."'
   children:
   - Z959addd5-232c-4c59-a2a0-bc73f729f2e7
   isPlayerSpeaking: 1
@@ -243,8 +244,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: -2
+  description: Great mental math! Try to dig deeper.
 --- !u!114 &2680117391107701824
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,8 +271,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 3
+  description: Good curious question to figure out the difficulty level of the job.
 --- !u!114 &4115086693152075788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z4206d5cf-2588-4d41-9a36-0876f8f7a780
   m_EditorClassIdentifier: 
-  text: '"We were supposed to sell $1,000 of merchandise per hour."'
+  text: '"We were supposed to sell $1,000 of merchandise per day."'
   children:
   - Zbc301609-1996-41e9-8034-0c9b827ea296
   - Za33acfd2-42eb-4d13-aed3-abe5bc0f851e
@@ -294,6 +295,32 @@ MonoBehaviour:
     serializedVersion: 2
     x: 23
     y: 159
+    width: 200
+    height: 125
+  onEnterAction: 
+  onExitAction: 
+  score: 0
+  description: 
+--- !u!114 &4164950091288496628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
+  m_Name: Z9fb94ad1-15ef-4105-b986-e4227f10e718
+  m_EditorClassIdentifier: 
+  text: 
+  children: []
+  isPlayerSpeaking: 0
+  isAChoice: 0
+  rectPosition:
+    serializedVersion: 2
+    x: 475
+    y: 2
     width: 200
     height: 125
   onEnterAction: 
@@ -320,7 +347,7 @@ MonoBehaviour:
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 487
+    x: 488
     y: 313
     width: 200
     height: 125
@@ -352,8 +379,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: -5
+  description: Ask a follow-up question to gain context for their accomplishments.
 --- !u!114 &5992905800934175085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,7 +393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z6b6f19b4-c1b1-4cc6-baa7-949860ede82c
   m_EditorClassIdentifier: 
-  text: '"How was your average vs your co-workers?"'
+  text: '"How did your sales performance compare to your co-workers?"'
   children:
   - Za1948e21-fd0d-4b19-a097-6864aee268bf
   isPlayerSpeaking: 1
@@ -379,8 +406,8 @@ MonoBehaviour:
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 5
+  description: Super question to gain contextual information on their accomplishment.
 --- !u!114 &7785516098148284695
 MonoBehaviour:
   m_ObjectHideFlags: 0

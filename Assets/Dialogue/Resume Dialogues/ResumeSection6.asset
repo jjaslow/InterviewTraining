@@ -12,20 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z83820292-6a75-466f-82e5-7a2870076613
   m_EditorClassIdentifier: 
-  text: '"Well, this is a customer support role, not a marketing position."'
+  text: '"Well, this is a customer service role, not a marketing position."'
   children: []
   isPlayerSpeaking: 1
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 684
-    y: 17
+    x: 795
+    y: 28
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: -5
+  description: As a more probiing question to understand the potential connection.
 --- !u!114 &-5446492405249408803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46,8 +46,8 @@ MonoBehaviour:
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 437
-    y: 161
+    x: 510
+    y: 156
     width: 200
     height: 125
   onEnterAction: 
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z353929ef-0724-4ecd-97b7-0e0151f038f6
   m_EditorClassIdentifier: 
-  text: '"Tell me about some of the things you learned in school."'
+  text: '"Tell me about some of the things you learned while at school."'
   children:
   - Z628c57b8-a803-41f7-ac4e-db0437b6f2af
   isPlayerSpeaking: 1
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Name: Z628c57b8-a803-41f7-ac4e-db0437b6f2af
   m_EditorClassIdentifier: 
   text: '"My combination of psychology and business makes me an ideal candidate for
-    a customer support role."'
+    a customer service role."'
   children:
   - Zcd40dd97-12c8-4c7f-a4aa-077c8e28f097
   - Z5c2d9288-4179-4668-a1c8-5dd40ab7bc92
@@ -151,8 +151,8 @@ MonoBehaviour:
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 27
-    y: 183
+    x: 28
+    y: 203
     width: 200
     height: 125
   onEnterAction: 
@@ -198,15 +198,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z81ff4c84-0dc9-4a93-9e51-29fd5a3aa8f6
   m_EditorClassIdentifier: 
-  text: '"Getting upset customers to turn around and like your business is an important
-    part of customer service."'
+  text: '"Getting upset customers to ultimately become advocates for the business
+    is an important part of customer service."'
   children: []
   isPlayerSpeaking: 0
   isAChoice: 0
   rectPosition:
     serializedVersion: 2
-    x: 921
-    y: 313
+    x: 1090
+    y: 335
     width: 200
     height: 125
   onEnterAction: 
@@ -225,18 +225,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Z3a946476-222c-4397-ac87-cbee4d539298
   m_EditorClassIdentifier: 
-  text: '"How do you think marketing can help in a customer support role?"'
+  text: '"How do you think marketing can help in a customer service role?"'
   children:
   - Z81ff4c84-0dc9-4a93-9e51-29fd5a3aa8f6
   isPlayerSpeaking: 1
   isAChoice: 1
   rectPosition:
     serializedVersion: 2
-    x: 683
-    y: 166
+    x: 783
+    y: 173
     width: 200
     height: 125
   onEnterAction: 
   onExitAction: 
-  score: 0
-  description: 
+  score: 5
+  description: Good job trying to make the connection to customer service.

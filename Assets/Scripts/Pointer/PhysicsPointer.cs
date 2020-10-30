@@ -86,7 +86,7 @@ public class PhysicsPointer : MonoBehaviour
     IEnumerator ReAllowPressing()
     {
         pressingTransitioning = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         isPressing = false;
         pressingTransitioning = false;
     }

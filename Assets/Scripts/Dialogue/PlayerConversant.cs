@@ -33,6 +33,8 @@ namespace RPG.Dialogue
 
         public void StartDialogue(Dialogue newDialogue, AIConversant NPC)
         {
+            isChoosing = false;
+
             currentConversant = NPC;
 
             currentDialogue = newDialogue;
@@ -91,7 +93,7 @@ namespace RPG.Dialogue
 
         public bool HasNext()
         {
-            int len = currentDialogue.GetAllChildren(currentNode).Count();
+            int len = currentDialogue.GetChildCount(currentNode);
             return len > 0;
         }
 

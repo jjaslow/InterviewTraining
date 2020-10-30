@@ -44,7 +44,6 @@ namespace RPG.Dialogue
         }
 
 
-
         //return list of child nodes for a specific parent node
         public IEnumerable<DialogueNode> GetAllChildren(DialogueNode parentNode)
         {
@@ -55,6 +54,11 @@ namespace RPG.Dialogue
                     result.Add(nodeLookup[child]);
             }
             return result;
+        }
+
+        public int GetChildCount(DialogueNode parentNode)
+        {
+            return parentNode.GetChildrenCount();
         }
 
         public IEnumerable<DialogueNode> GetPlayerChildren(DialogueNode currentNode)
@@ -86,16 +90,14 @@ namespace RPG.Dialogue
 
 
 
-        //initialize the dialogue when first created (in the editor only)
-#if UNITY_EDITOR
+
         private void Awake()
         {
-            //if(nodes.Count == 0)
-            //{
-            //    CreateNewNode(null);
-            //}
+            OnValidate();
         }
-#endif
+
+
+
 
         //function is called when the script is loaded or a value is changed in the Inspector
         //when a value is changed in the Inspector (for this dialogue)

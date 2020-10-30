@@ -43,6 +43,11 @@ namespace RPG.Dialogue
             return children;
         }
 
+        public int GetChildrenCount()
+        {
+            return children.Count;
+        }
+
 #if UNITY_EDITOR
         public void AddChild(string node)
         {

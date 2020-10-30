@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ae2725332276b444ab97497eb657fa7, type: 3}
   m_Name: Zb644f066-40e9-4f8e-9820-977ba4540474
   m_EditorClassIdentifier: 
-  text: '"Why didnt you just bend the rules this one time?"'
+  text: '"Why didn''t you just bend the rules this one time?"'
   children:
   - Zd0835a22-b1ea-4de8-9a4a-a0bfd1484588
   isPlayerSpeaking: 1
